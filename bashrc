@@ -1,3 +1,4 @@
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -13,8 +14,9 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
+HISTSIZE=20000
 HISTFILESIZE=20000
+HISTTIMEFORMAT="[%Y-%m-%d - %H:%M:%S] "
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -81,6 +83,128 @@ fi
 alias ll='ls -lF'
 alias la='ls -Al'
 alias l='ls -CF'
+alias lx='ls -lXB'         # sort by extension
+alias lk='ls -lSr'         # sort by size, biggest last
+alias lc='ls -ltcr'        # sort by and show change time, most recent last
+alias lu='ls -ltur'        # sort by and show access time, most recent last
+alias lt='ls -ltr'         # sort by date, most recent last
+alias lm='ls -al |more'    # pipe through 'more'
+alias lr='ls -lR'          # recursive ls
+
+alias tree='tree -Csu'     # nice alternative to 'recursive ls'
+alias pg='ps waux | grep'
+alias mkdir='mkdir -p'
+alias more='less'
+
+
+function xtitle()      # Adds some text in the terminal frame.
+{
+    case "$TERM" in
+        *term | rxvt)
+            echo -n -e "\033]0;$*\007" ;;
+        *)  
+            ;;
+    esac
+}
+
+# aliases that use xtitle
+alias top='xtitle Processes on `hostname` && top'
+alias htop='xtitle Processes on `hostname` && htop'
+alias make='xtitle Making $(basename $PWD) ; make'
+alias ncftp="xtitle ncFTP ; ncftp"
+
+# .. and functions
+function man()
+{
+    for i ; do
+        xtitle The $(basename $1|tr -d .[:digit:]) manual
+        command man -F -a "$i"
+    done
+}
+
+
+function swap()  # Swap 2 filenames around, if they exist
+{                #(from Uzi's bashrc).
+    local TMPFILE=tmp.$$ 
+
+    [ $# -ne 2 ] && echo "swap: 2 arguments needed" && return 1
+    [ ! -e $1 ] && echo "swap: $1 does not exist" && return 1
+    [ ! -e $2 ] && echo "swap: $2 does not exist" && return 1
+
+    mv "$1" $TMPFILE 
+    mv "$2" "$1"
+    mv $TMPFILE "$2"
+}
+
+function extract()      # Handy Extract Program.
+{
+     if [ -f $1 ] ; then
+         case $1 in
+             *.tar.bz2)   tar xvjf $1     ;;
+             *.tar.gz)    tar xvzf $1     ;;
+             *.bz2)       bunzip2 $1      ;;
+             *.rar)       unrar x $1      ;;
+             *.gz)        gunzip $1       ;;
+             *.tar)       tar xvf $1      ;;
+             *.tbz2)      tar xvjf $1     ;;
+             *.tgz)       tar xvzf $1     ;;
+             *.zip)       unzip $1        ;;
+             *.Z)         uncompress $1   ;;
+             *.7z)        7z x $1         ;;
+             *)           echo "'$1' cannot be extracted via >extract<" ;;
+         esac
+     else
+         echo "'$1' is not a valid (known) archive file"
+     fi
+}
+
+
+#-------------------------------------------------------------
+# Misc utilities:
+#-------------------------------------------------------------
+
+function repeat()       # Repeat n times command.
+{
+    local i max
+    max=$1; shift;
+    for ((i=1; i <= max ; i++)); do  # --> C-like syntax
+        eval "$@";
+    done
+}
+
+
+
+
+
+#-------------------------------------------------------------
+# Greeting, motd etc...
+#-------------------------------------------------------------
+
+# Define some colors first:
+red='\e[0;31m'
+RED='\e[1;31m'
+blue='\e[0;34m'
+BLUE='\e[1;34m'
+cyan='\e[0;36m'
+CYAN='\e[1;36m'
+NC='\e[0m'              # No Color
+
+
+# Looks best on a terminal with black background.....
+echo -e "${CYAN}This is BASH ${RED}${BASH_VERSION%.*}\
+${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
+date
+if [ -x /usr/games/fortune ]; then
+    /usr/games/fortune -s | /usr/games/cowthink    # Makes our day a bit more fun.... :-)
+fi
+
+function _exit()        # Function to run upon exit of shell.
+{
+    echo -e "${RED}Hasta la vista, baby.${NC}"
+}
+trap _exit EXIT
+
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
