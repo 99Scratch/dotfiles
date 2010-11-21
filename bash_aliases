@@ -26,4 +26,5 @@ alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 alias pg='ps waux | grep'
 alias mkdir='mkdir -p'
 alias more='less'
+alias watch='watch -n 1'
 
