@@ -95,6 +95,7 @@ alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 alias pg='ps waux | grep'
 alias mkdir='mkdir -p'
 alias more='less'
+alias xg='cd ~/git/xdcc-grabscher/trunk; screen ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
 
 
 function xtitle()      # Adds some text in the terminal frame.
