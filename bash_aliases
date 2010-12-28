@@ -1,7 +1,7 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls -h --color=auto'
+    alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 
@@ -11,8 +11,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -lF'
-alias la='ls -Al'
+alias ll='ls -lFh'
+alias la='ls -Alh'
 alias l='ls -CF'
 alias lx='ls -lXB'         # sort by extension
 alias lk='ls -lSr'         # sort by size, biggest last
@@ -23,7 +23,7 @@ alias lm='ls -al |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
-alias pg='ps waux | grep'
+alias pg='ps waux | grep -i'
 alias mkdir='mkdir -p'
 alias more='less'
 alias watch='watch -n 1'
