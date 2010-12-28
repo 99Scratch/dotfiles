@@ -27,4 +27,5 @@ alias pg='ps waux | grep -i'
 alias mkdir='mkdir -p'
 alias more='less'
 alias watch='watch -n 1'
+alias xg='cd ~/git/xdcc-grabscher/trunk; screen ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
 
