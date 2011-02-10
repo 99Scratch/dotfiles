@@ -22,6 +22,8 @@ alias lt='ls -ltr'         # sort by date, most recent last
 alias lm='ls -al |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 
+alias free='free -m'
+
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 alias pg='ps waux | grep -i'
 alias mkdir='mkdir -p'
