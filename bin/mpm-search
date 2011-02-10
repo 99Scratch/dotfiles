@@ -1,0 +1,1 @@
+sudo mpm --install-root=/usr/share/texmf-texlive/ --list|grep $1

@@ -1,0 +1,2 @@
+sudo mpm --install-root=/usr/share/texmf-texlive/ --install=$1
+sudo mktexlsr
