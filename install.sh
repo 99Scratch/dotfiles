@@ -16,5 +16,12 @@ then
 fi
 
 # copy vim plugins
-cp -r vim ~/.vim
+cp -r vim/* ~/.vim/
+
+# dir for the snippetsEmu vim script
+if [ ! -d ~/.vim/after/ftplugin ]
+then
+	echo "creating ~/.vim/after/ftplugin"
+	mkdir -p ~/.vim/after/ftplugin
+fi
 
