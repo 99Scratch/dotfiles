@@ -15,6 +15,11 @@ else:
     url = sys.argv[1]
 
 file_name = url
+
+file_name=file_name.replace("http://", "")
+file_name=file_name.replace("http://www.", "")
+file_name=file_name.replace("https://", "")
+file_name=file_name.replace("https://www.", "")
 file_name=file_name.replace(":", "_colon_")
 file_name=file_name.replace("/", "_slash_")
 file_name=file_name.replace("?", "_qm_")

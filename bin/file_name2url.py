@@ -21,6 +21,6 @@ url=url.replace("_qm_", "?")
 url=url.replace("_amp_", "&")
 url=url.replace("_equals_", "=")
 url=url.replace("_percent_", "%")
-
+url="http://"+url
 
 print url
