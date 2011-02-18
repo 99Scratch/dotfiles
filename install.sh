@@ -8,7 +8,10 @@ cp SciTEUser.properties ~/.SciTEUser.properties
 cp -r bin ~
 if [ -d /usr/share/scite ] 
 then
-	sudo cp locale.de.properties /usr/share/scite/locale.properties
-#	echo "scite locale de copied"
+	if [ ! -f /usr/share/scite/locale.properties ] 
+	then
+		sudo cp locale.de.properties /usr/share/scite/locale.properties
+		echo "german locale for scite copied"
+	fi
 fi
 
