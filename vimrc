@@ -1,3 +1,10 @@
+" Automatische Einrückung (Globale Konfiguration)
+set smartindent
+set smarttab
+
+" UTF-8 als Default-Encoding
+set enc=utf-8
+
 " Ein Tab entspricht vier Leerzeichen (wie in PEP 8 definiert)
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
