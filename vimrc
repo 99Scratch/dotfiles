@@ -11,3 +11,6 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 " Start python on F5
 autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
 
+let &t_Co=256
+colorscheme synic
+
