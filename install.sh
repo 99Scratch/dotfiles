@@ -10,8 +10,11 @@ if [ -d /usr/share/scite ]
 then
 	if [ ! -f /usr/share/scite/locale.properties ] 
 	then
+		echo "copying german locale for scite"
 		sudo cp locale.de.properties /usr/share/scite/locale.properties
-		echo "german locale for scite copied"
 	fi
 fi
+
+# copy vim plugins
+cp -r vim ~/.vim
 
