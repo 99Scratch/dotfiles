@@ -85,13 +85,13 @@ alias make='xtitle Making $(basename $PWD) ; make'
 alias ncftp="xtitle ncFTP ; ncftp"
 
 # .. and functions
-function man()
-{
-    for i ; do
-        xtitle The $(basename $1|tr -d .[:digit:]) manual
-        command man -F -a "$i"
-    done
-}
+#function man()
+#{
+#    for i ; do
+#        xtitle The $(basename $1|tr -d .[:digit:]) manual
+#        command man -a "$i"
+#    done
+#}
 
 
 function swap()  # Swap 2 filenames around, if they exist
