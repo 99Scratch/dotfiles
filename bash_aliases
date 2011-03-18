@@ -30,4 +30,5 @@ alias mkdir='mkdir -p'
 alias more='less'
 alias watch='watch -n 1'
 alias xg='cd ~/git/xdcc-grabscher/trunk; screen ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
+alias proxy='ssh -L -N 3333:localhost:3128 spence'
 
