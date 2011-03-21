@@ -30,4 +30,6 @@ alias mkdir='mkdir -p'
 alias more='less'
 alias watch='watch -n 1'
 alias xg='cd ~/git/xdcc-grabscher/trunk; screen ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
+alias packagelist='dpkg --get-selections | /bin/grep \'install$\' | /usr/bin/awk \'{print $1}\' > full.package.list-$(/bin/uname -n)'
+alias packageinstall='aptitude install $(cat full.package.list-$(/bin/uname -n))'
 
