@@ -30,6 +30,7 @@ alias mkdir='mkdir -p'
 alias more='less'
 alias watch='watch -n 1'
 alias xg='cd ~/git/xdcc-grabscher/trunk; screen ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
+alias proxy='screen ssh -N -L 3333:localhost:3128 spence'
 alias packagelist='dpkg --get-selections | /bin/grep \'install$\' | /usr/bin/awk \'{print $1}\' > full.package.list-$(/bin/uname -n)'
 alias packageinstall='aptitude install $(cat full.package.list-$(/bin/uname -n))'
 
