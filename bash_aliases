@@ -29,6 +29,6 @@ alias pg='ps waux | grep -i'
 alias mkdir='mkdir -p'
 alias more='less'
 alias watch='watch -n 1'
-alias xg='cd ~/git/xdcc-grabscher/trunk; screen ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
-alias proxy='screen ssh -N -L 3333:localhost:3128 spence'
+alias xg='cd ~/git/xdcc-grabscher/trunk; screen -S xdcc-grabscher ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
+alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
 
