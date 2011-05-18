@@ -37,4 +37,4 @@ alias nmap-manual='HOST=127.0.0.1;for((port=1;port<=65535;++port)); do echo -en 
 alias minecraft='java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3333 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3333 -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
 alias mobile_atlas_creator='java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3333 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3333 -Xmx800m -jar ~/opt/mobile_atlas_creator/Mobile_Atlas_Creator.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar'
-
+alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
