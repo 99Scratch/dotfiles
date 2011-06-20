@@ -11,4 +11,7 @@
 	co = checkout
 	ci = commit
 	st = status
+	la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
+	oneline = log --pretty=oneline
+	br = branch
 
