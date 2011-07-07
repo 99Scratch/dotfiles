@@ -1,0 +1,530 @@
+<bookmarks>
+<group name="root">
+	<group name="Latin">
+		<bookmark name="Onda Tropical" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=506392"/>
+	</group>
+	<group name="Classic Rock">
+		<bookmark name="181.FM Classic Hits" url="http://sc-rly.181.fm:80/stream/1094"/>
+		<bookmark name=".977 Classic Rock" url="http://www.977music.com/tunein/web/classicrock.asx"/>
+	</group>
+	<group name="Classical">
+		<bookmark name="KDFC" url="http://provisioning.streamtheworld.com/pls/KDFCFM.pls"/>
+		<bookmark name="Classic FM" url="http://media-ice.musicradio.com/ClassicFMMP3.m3u"/>
+		<bookmark name="WCPE" url="http://www.ibiblio.org/wcpe/wcpe.pls"/>
+	</group>
+	<group name="Pop / Rock">
+		<bookmark name="Radio Paradise" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1354805"/>
+		<bookmark name="Enjoy Station" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1377285"/>
+	</group>
+	<group name="Oldies">
+		<bookmark name="AM 1710" url="http://lin2.ash.fast-serv.com:9022/listen.pls"/>
+		<bookmark name="WNAR" url="http://live.wnar-am.com:8500/listen.pls"/>
+	</group>
+	<group name="Chill">
+		<bookmark name="Groove Salad" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1325107"/>
+		<bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275050"/>
+		<bookmark name="Lounge Radio" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1288934"/>
+	</group>
+	<group name="German">
+		<group name="1Live">
+			<bookmark name="Eins Live" url="http://www.wdr.de/wdrlive/media/einslive.m3u"/>
+			<bookmark name="Eins Live Digi" url="http://www.wdr.de/wdrlive/media/einslivedigi.m3u"/>
+			<bookmark name="Eins Live Klubbing" url="http://www.wdr.de/wdrlive/media/1live_klubbing.m3u"/>
+			<bookmark name="Eins Live Kassettendeck" url="http://www.wdr.de/wdrlive/media/1live_kassettendeck.m3u"/>
+			<bookmark name="Eins Live Plan B" url="http://www.wdr.de/wdrlive/media/1live_planb.m3u"/>
+			<bookmark name="Eins Live Plan B mit" url="http://www.wdr.de/wdrlive/media/1live_planbmit.m3u"/>
+			<bookmark name="Eins Live Fiehe" url="http://www.wdr.de/wdrlive/media/1live_fiehe.m3u"/>
+			<bookmark name="Eins Live Rocker" url="http://www.wdr.de/wdrlive/media/1live_rocker.m3u"/>
+		</group>
+		<group name="90elf">
+			<bookmark name="90elf Hauptprogramm" url="http://85.239.108.41/90elf_basis_hq"/>
+			<bookmark name="90elf Livespiel 1" url="http://85.239.108.41/90elf_rp01"/>
+			<bookmark name="90elf Livespiel 2" url="http://85.239.108.41/90elf_rp02"/>
+			<bookmark name="90elf Livespiel 3" url="http://85.239.108.41/90elf_rp03"/>
+			<bookmark name="90elf Livespiel 4" url="http://85.239.108.41/90elf_rp04"/>
+			<bookmark name="90elf Livespiel 5" url="http://85.239.108.41/90elf_rp05"/>
+			<bookmark name="90elf Livespiel 6" url="http://85.239.108.41/90elf_rp06"/>
+		</group>
+		<group name="Bayerischer Rundfunk">
+			<bookmark name="Bayerischer Rundfunk 1" url="http://streams.br-online.de/bayern1_2.m3u"/>
+			<bookmark name="Bayerischer Rundfunk 2" url="http://streams.br-online.de/bayern2_2.m3u"/>
+			<bookmark name="Bayerischer Rundfunk 3" url="http://streams.br-online.de/bayern3_2.m3u"/>
+			<bookmark name="Bayerischer Rundfunk Mobil" url="http://streams.br-online.de/bayernmobil_2.m3u"/>
+			<bookmark name="Bayerischer Rundfunk 4 Klassik" url="http://streams.br-online.de/bayern4klassik_2.m3u"/>
+			<bookmark name="Bayerischer Rundfunk 5 Aktuell" url="http://streams.br-online.de/b5aktuell_2.m3u"/>
+			<bookmark name="Bayerischer Rundfunk 5 Plus" url="http://streams.br-online.de/b5plus_2.m3u"/>
+			<bookmark name="Bayerischer Rundfunk Jugend-Radio" url="http://streams.br-online.de/jugend-radio_2.m3u"/>
+		</group>
+		<group name="Deutschlandradio">
+			<bookmark name="Deutschlandradio Ogg" url="http://dradio.ic.llnwd.net/stream/dradio_dlf_m_a.ogg"/>
+			<bookmark name="Deutschlandradio MP3" url="http://www.dradio.de/streaming/dlf.m3u"/>
+			<bookmark name="Deutschlandradio Kultur Ogg" url="http://dradio.ic.llnwd.net/stream/dradio_dkultur_m_a.ogg"/>
+			<bookmark name="Deutschlandradio Kultur MP3" url="http://www.dradio.de/streaming/dkultur.m3u"/>
+			<bookmark name="Deutschlandradio Wissen Ogg" url="http://dradio.ic.llnwd.net/stream/dradio_dwissen_m_a.ogg"/>
+			<bookmark name="Deutschlandradio Wissen MP3" url="http://www.dradio.de/streaming/dradiowissen.m3u"/>
+		</group>
+		<group name="DASDING">
+			<bookmark name="DASDING" url="http://mp3-live.dasding.de/dasding_m.m3u"/>
+			<bookmark name="dasdingraka01_m" url="http://mp3-live.dasding.de/dasdingraka01_m.m3u"/>
+			<bookmark name="dasdingraka02_m" url="http://mp3-live.dasding.de/dasdingraka02_m.m3u"/>
+			<bookmark name="dasdingraka03_m" url="http://mp3-live.dasding.de/dasdingraka03_m.m3u"/>
+		</group>
+		<group name="Hessischer Rundfunk">
+			<bookmark name="Hessischer Rundfunk 1" url="http://metafiles.gl-systemhaus.de/hr/hr1_2.m3u"/>
+			<bookmark name="Hessischer Rundfunk 2" url="http://metafiles.gl-systemhaus.de/hr/hr2_2.m3u"/>
+			<bookmark name="Hessischer Rundfunk 3" url="http://metafiles.gl-systemhaus.de/hr/hr3_2.m3u"/>
+			<bookmark name="Hessischer Rundfunk 4" url="http://metafiles.gl-systemhaus.de/hr/hr4_2.m3u"/>
+			<bookmark name="Hessischer Rundfunk Info" url="http://metafiles.gl-systemhaus.de/hr/hrinfo_2.m3u"/>
+		</group>
+		<group name="laut.fm">
+			<bookmark name="laut.fm best_of_80s" url="http://stream.laut.fm/best_of_80s"/>
+			<bookmark name="laut.fm alpenradio-volksmusik" url="http://stream.laut.fm/alpenradio-volksmusik"/>
+			<bookmark name="laut.fm herrmerktradio" url="http://stream.laut.fm/herrmerktradio"/>
+			<bookmark name="laut.fm radiofunclub80" url="http://stream.laut.fm/radiofunclub80"/>
+			<bookmark name="laut.fm maximix" url="http://stream.laut.fm/maximix"/>
+			<bookmark name="laut.fm germanyfm" url="http://stream.laut.fm/germanyfm"/>
+			<bookmark name="laut.fm eurosmoothjazz" url="http://stream.laut.fm/eurosmoothjazz"/>
+			<bookmark name="laut.fm papa-mike" url="http://stream.laut.fm/papa-mike"/>
+			<bookmark name="laut.fm deepgroove" url="http://stream.laut.fm/deepgroove"/>
+			<bookmark name="laut.fm jahfari" url="http://stream.laut.fm/jahfari"/>
+			<bookmark name="laut.fm radio-hot100" url="http://stream.laut.fm/radio-hot100"/>
+			<bookmark name="laut.fm alpenradio-plus" url="http://stream.laut.fm/alpenradio-plus"/>
+			<bookmark name="laut.fm indiegoestohollywood" url="http://stream.laut.fm/indiegoestohollywood"/>
+			<bookmark name="laut.fm alpenradio" url="http://stream.laut.fm/alpenradio"/>
+			<bookmark name="laut.fm jazzloft" url="http://stream.laut.fm/jazzloft"/>
+			<bookmark name="laut.fm housebomb-fn" url="http://stream.laut.fm/housebomb-fn"/>
+			<bookmark name="laut.fm neon" url="http://stream.laut.fm/neon"/>
+			<bookmark name="laut.fm deutschrap1radio" url="http://stream.laut.fm/deutschrap1radio"/>
+			<bookmark name="laut.fm travel-trends" url="http://stream.laut.fm/travel-trends"/>
+			<bookmark name="laut.fm thejazzofwiesbaden" url="http://stream.laut.fm/thejazzofwiesbaden"/>
+			<bookmark name="laut.fm nummer_1_oldies" url="http://stream.laut.fm/nummer_1_oldies"/>
+			<bookmark name="laut.fm ondalatina" url="http://stream.laut.fm/ondalatina"/>
+			<bookmark name="laut.fm happydaysradio" url="http://stream.laut.fm/happydaysradio"/>
+			<bookmark name="laut.fm radio-shadowplay" url="http://stream.laut.fm/radio-shadowplay"/>
+			<bookmark name="laut.fm alternativeworld" url="http://stream.laut.fm/alternativeworld"/>
+			<bookmark name="laut.fm musiktruhe" url="http://stream.laut.fm/musiktruhe"/>
+			<bookmark name="laut.fm just80s" url="http://stream.laut.fm/just80s"/>
+			<bookmark name="laut.fm groovediggi" url="http://stream.laut.fm/groovediggi"/>
+			<bookmark name="laut.fm bluesclub" url="http://stream.laut.fm/bluesclub"/>
+			<bookmark name="laut.fm rockin_c" url="http://stream.laut.fm/rockin_c"/>
+		<bookmark name="Schlachtplatte" url="http://www.laut.fm/user/schlachtplatte/stream.pls"/>
+		</group>
+		<group name="MDR">
+			<bookmark name="mdr1_radio_sachsen_live_128" url="http://avw.mdr.de/livestreams/mdr1_radio_sachsen_live_128.m3u"/>
+			<bookmark name="mdr1_radio_sachsen-anhalt_live_128" url="http://avw.mdr.de/livestreams/mdr1_radio_sachsen-anhalt_live_128.m3u"/>
+			<bookmark name="mdr1_radio_thueringen_live_128" url="http://avw.mdr.de/livestreams/mdr1_radio_thueringen_live_128.m3u"/>
+			<bookmark name="mdr_figaro_live_128" url="http://avw.mdr.de/livestreams/mdr_figaro_live_128.m3u"/>
+			<bookmark name="mdr_figaro_classic_128" url="http://avw.mdr.de/livestreams/mdr_figaro_classic_128.m3u"/>
+			<bookmark name="mdr_figaro_figarino_128" url="http://avw.mdr.de/livestreams/mdr_figaro_figarino_128.m3u"/>
+			<bookmark name="mdr_figaro_folk_128" url="http://avw.mdr.de/livestreams/mdr_figaro_folk_128.m3u"/>
+			<bookmark name="mdr_info_live_128" url="http://avw.mdr.de/livestreams/mdr_info_live_128.m3u"/>
+			<bookmark name="MDR live_de_128" url="http://balancer.streamfarm.net/tv1/cms/~kunde/~jump_mp3_live/22004mdrjump/live/3087mdr_jump/live_de_128.mp3"/>
+			<bookmark name="MDR jump_interaktiv_channel_128" url="http://www.jumpradio.de/static/webchannel/jump_interaktiv_channel_128.m3u"/>
+			<bookmark name="MDR jump_piraten_channel_128" url="http://www.jumpradio.de/static/webchannel/jump_piraten_channel_128.m3u"/>
+			<bookmark name="MDR jump_rock_channel_128" url="http://www.jumpradio.de/static/webchannel/jump_rock_channel_128.m3u"/>
+			<bookmark name="MDR jump_trend_channel_128" url="http://www.jumpradio.de/static/webchannel/jump_trend_channel_128.m3u"/>
+			<bookmark name="mdr_klassik_live_128" url="http://avw.mdr.de/livestreams/mdr_klassik_live_128.m3u"/>
+			<group name="Sputnik">
+				<bookmark name="Sputnik live.hi" url="http://www.sputnik.de/m3u/live.hi.m3u"/>
+				<bookmark name="Sputnik black.hi" url="http://www.sputnik.de/m3u/black.hi.m3u"/>
+				<bookmark name="Sputnik club.hi" url="http://www.sputnik.de/m3u/club.hi.m3u"/>
+				<bookmark name="Sputnik insomnia.hi" url="http://www.sputnik.de/m3u/insomnia.hi.m3u"/>
+				<bookmark name="Sputnik makossa.hi" url="http://www.sputnik.de/m3u/makossa.hi.m3u"/>
+				<bookmark name="Sputnik popkult.hi" url="http://www.sputnik.de/m3u/popkult.hi.m3u"/>
+				<bookmark name="Sputnik rock.hi" url="http://www.sputnik.de/m3u/rock.hi.m3u"/>
+				<bookmark name="Sputnik soundcheck.hi" url="http://www.sputnik.de/m3u/soundcheck.hi.m3u"/>
+			</group>
+		</group>
+		<group name="NDR">
+			<bookmark name="NDR 1 Niedersachsen" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1niedersachsen_hi_mp3"/>
+			<bookmark name="NDR 1 Radio MV" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1radiomv_hi_mp3"/>
+			<bookmark name="NDR 903" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr903_hi_mp3"/>
+			<bookmark name="NDR  Welle Nord" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1wellenord_hi_mp3"/>
+			<bookmark name="NDR Kultur" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndrkultur_hi_mp3"/>
+			<bookmark name="NDR Info" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndrinfo_hi_mp3"/>
+			<bookmark name="NDR Info Spezial" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndrinfo_spezial_hi_mp3"/>
+			<bookmark name="NDR 2" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr2_hi_mp3"/>
+		</group>
+		<group name="Radio Bremen">
+			<bookmark name="gffstream_mp3_w48a" url="http://gffstream.ic.llnwd.net/stream/gffstream_mp3_w48a"/>
+			<bookmark name="bremenvier" url="http://www.radiobremen.de/stream/live/bremenvier.m3u"/>
+			<bookmark name="bremenvier" url="http://www.radiobremen.de/stream/live/bremenvier.m3u"/>
+			<bookmark name="rockt" url="http://80.252.104.101:8000/rockt.m3u"/>
+			<bookmark name="zeiglerswwdp" url="http://80.252.104.101:8000/zeiglerswwdp.m3u"/>
+		</group>
+		<group name="RauteMusik.FM">
+			<bookmark name="#Musik.Main" url="http://Main-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.Club" url="http://Club-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.eXTreMe" url="http://eXTreMe-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.JaM" url="http://JaM-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.FunkY" url="http://FunkY-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.Goldies" url="http://Goldies-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.Lounge" url="http://Lounge-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.HardeR" url="http://HardeR-High.RauteMusik.FM/listen.asx"/>
+			<bookmark name="#Musik.BigCityBeats" url="http://BCB-High.RauteMusik.FM/listen.asx"/>
+		</group>
+		<group name="rbb">
+			<bookmark name="rbb Kulturradio" url="http://kulturradio.de/livemp3"/>
+			<bookmark name="rbb Radio Eins" url="http://radioeins.de/livemp3"/>
+			<bookmark name="rbb Fritz" url="http://fritz.de/livemp3"/>
+			<bookmark name="rbb Inforadio" url="http://inforadio.de/livemp3"/>
+			<bookmark name="rbb Radio Berlin" url="http://radioberlin.de/livemp3"/>
+			<bookmark name="rbb Antenne Brandenburg" url="http://www.antennebrandenburg.de/livemp3"/>
+		</group>
+		<group name="Rockantenne">
+			<bookmark name="mp3.webradio.rockantenne" url="http://mp3.webradio.rockantenne.de:80"/>
+			<bookmark name="surround.webradio.rockantenne" url="http://surround.webradio.rockantenne.de"/>
+			<bookmark name="alternative" url="http://mp3channels.webradio.rockantenne.de/alternative"/>
+			<bookmark name="classic-perlen" url="http://mp3channels.webradio.rockantenne.de/classic-perlen"/>
+			<bookmark name="heavy-metal" url="http://mp3channels.webradio.rockantenne.de/heavy-metal"/>
+		</group>
+		<group name="Saarländischer Rundfunk">
+			<bookmark name="sr1_2" url="http://streaming01.sr-online.de/sr1_2.m3u"/>
+			<bookmark name="sr1klassiker" url="http://streaming02.sr-online.de/sr1klassiker.m3u"/>
+			<bookmark name="sr1lounge" url="http://streaming02.sr-online.de/sr1lounge.m3u"/>
+			<bookmark name="sr2_2" url="http://streaming01.sr-online.de/sr2_2.m3u"/>
+			<bookmark name="sr2offbeat" url="http://streaming02.sr-online.de/sr2offbeat.m3u"/>
+			<bookmark name="sr3oldiewelt" url="http://streaming02.sr-online.de/sr3oldiewelt.m3u"/>
+			<bookmark name="sr3_2" url="http://streaming01.sr-online.de/sr3_2.m3u"/>
+			<bookmark name="sr3schlagerwelt" url="http://streaming02.sr-online.de/sr3schlagerwelt.m3u"/>
+			<bookmark name="unserding-schwarz" url="http://streaming02.sr-online.de/unserding-schwarz.m3u"/>
+			<bookmark name="unserding-zukunft" url="http://streaming02.sr-online.de/unserding-zukunft.m3u"/>
+		</group>
+		<group name="Shouted FM">
+			<bookmark name="Radio multicult2.0 MP3" url="http://main.mthn.net:8000/listen.pls"/>
+			<bookmark name="listen" url="http://main.mthn.net:8056/listen.pls"/>
+			<bookmark name="listen" url="http://house.mthn.net:8500/listen.pls"/>
+			<bookmark name="listen" url="http://house.mthn.net:8556/listen.pls"/>
+			<bookmark name="listen" url="http://alternative.mthn.net:8700/listen.pls"/>
+			<bookmark name="listen" url="http://alternative.mthn.net:8756/listen.pls"/>
+			<bookmark name="listen" url="http://black.mthn.net:8300/listen.pls"/>
+			<bookmark name="listen" url="http://black.mthn.net:8356/listen.pls"/>
+			<bookmark name="listen" url="http://break.mthn.net:8800/listen.pls"/>
+			<bookmark name="listen" url="http://break.mthn.net:8856/listen.pls"/>
+			<bookmark name="listen" url="http://club.mthn.net:8200/listen.pls"/>
+			<bookmark name="listen" url="http://club.mthn.net:8256/listen.pls"/>
+			<bookmark name="listen" url="http://electro.mthn.net:8400/listen.pls"/>
+		</group>
+		<group name="SWR">
+			<bookmark name="swr1bw_s" url="http://mp3-live.swr.de/swr1bw_s.m3u"/>
+			<bookmark name="swr1rp_s" url="http://mp3-live.swr.de/swr1rp_s.m3u"/>
+			<bookmark name="swr2_s" url="http://mp3-live.swr.de/swr2_s.m3u"/>
+			<bookmark name="swr3_s" url="http://mp3-live.swr3.de/swr3_s.m3u"/>
+			<bookmark name="swr4bw_s" url="http://mp3-live.swr.de/swr4bw_s.m3u"/>
+			<bookmark name="swr4rp_s" url="http://mp3-live.swr.de/swr4rp_s.m3u"/>
+			<bookmark name="swr_mp3_m_contraa" url="http://swr.ic.llnwd.net/stream/swr_mp3_m_contraa"/>
+		</group>
+		<group name="WDR">
+			<bookmark name="wdr2" url="http://www.wdr.de/wdrlive/media/wdr2.m3u"/>
+			<bookmark name="wdr3" url="http://www.wdr.de/wdrlive/media/wdr3.m3u"/>
+			<bookmark name="wdr4" url="http://www.wdr.de/wdrlive/media/wdr4.m3u"/>
+			<bookmark name="wdr5" url="http://www.wdr.de/wdrlive/media/wdr5.m3u"/>
+			<bookmark name="kiraka" url="http://www.wdr.de/wdrlive/media/kiraka.m3u"/>
+			<bookmark name="audioevent" url="http://www.wdr.de/wdrlive/media/audioevent.m3u"/>
+			<bookmark name="koelnradyosunet" url="http://www.wdr.de/wdrlive/media/koelnradyosunet.m3u"/>
+			<bookmark name="netradioforum" url="http://www.wdr.de/wdrlive/media/netradioforum.m3u"/>
+			<bookmark name="wdr2_bielefeld" url="http://www.wdr.de/wdrlive/media/wdr2_bielefeld.m3u"/>
+			<bookmark name="wdr2_muenster" url="http://www.wdr.de/wdrlive/media/wdr2_muenster.m3u"/>
+			<bookmark name="wdr2_dortmund" url="http://www.wdr.de/wdrlive/media/wdr2_dortmund.m3u"/>
+			<bookmark name="wdr2_essen_duesseldorf" url="http://www.wdr.de/wdrlive/media/wdr2_essen_duesseldorf.m3u"/>
+			<bookmark name="wdr2_wuppertal" url="http://www.wdr.de/wdrlive/media/wdr2_wuppertal.m3u"/>
+			<bookmark name="wdr2_siegen" url="http://www.wdr.de/wdrlive/media/wdr2_siegen.m3u"/>
+			<bookmark name="wdr2_aachen" url="http://www.wdr.de/wdrlive/media/wdr2_aachen.m3u"/>
+		</group>
+		<group name="You FM">
+			<bookmark name="youfm_2" url="http://metafiles.gl-systemhaus.de/hr/youfm_2.m3u"/>
+			<bookmark name="youfm_black" url="http://metafiles.gl-systemhaus.de/hr/youfm_black.m3u"/>
+			<bookmark name="youfm_club" url="http://metafiles.gl-systemhaus.de/hr/youfm_club.m3u"/>
+			<bookmark name="youfm_rock" url="http://metafiles.gl-systemhaus.de/hr/youfm_rock.m3u"/>
+		</group>
+		<bookmark name="N-JOY" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_n-joy_hi_mp3"/>
+		<bookmark name="89.0 RTL (Halle)" url="http://www.89.0rtl.de/webradio/rtl-high.m3u"/>
+		<bookmark name="104.6 RTL (Berlin)" url="http://3983.live.streamtheworld.com:80/RTL_AIR_MOBILECMP3"/>
+		<bookmark name="Antenne Mecklenburg Vorpommern" url="http://stream.hoerradar.de/antennemv-mp3.m3u"/>
+		<bookmark name="bigFM" url="http://srv04.bigstreams.de/bigfm-mp3-64"/>
+		<bookmark name="BLACKBEATS.FM" url="http://blackbeats.fm/listen.m3u "/>
+		<bookmark name="ByteFM" url="http://www.byte.fm/stream/bytefm.m3u"/>
+		<bookmark name="Das Neue Alster Radio" url="http://live96.106acht.de"/>
+		<bookmark name="Deutsche Welle" url="http://c13010-ls.i.core.cdn.streamfarm.net/dwworldlive-live/13010dwrde64.mp3"/>
+		<bookmark name="Die Neue 107.7" url="http://edge.live.mp3.mdn.newmedia.nacamar.net/ps-dieneue_rock/livestream_hi.mp3.m3u"/>
+		<bookmark name="domradio" url="http://62.75.220.89:8000"/>
+		<bookmark name="egoFM" url="http://www.egofm.de/stream/192kb"/>
+		<bookmark name="ffn Niedersachsen" url="http://player.ffn.de/tunein_ffn.pls"/>
+		<bookmark name="fishmixx" url="http://stream.fishmixx.de:8000/fishmixx.ogg.m3u"/>
+		<bookmark name="Funkhaus Europa" url="http://www.wdr.de/wdrlive/media/fhe.m3u"/>
+		<bookmark name="Foxwahn Radio" url="http://89.149.226.225:8100"/>
+		<bookmark name="GrooveFM" url="http://stream.groovefm.de:10028"/>
+		<bookmark name="Gong 96.3 München" url="http://radigo01.nci.de:8000/high_q.m3u"/>
+		<bookmark name="Hearttime-Radio" url="http://hearttime-radio.com:8000/listen.pls"/>
+		<bookmark name="Hope Channel Radio" url="http://www.mediaserver.stimme-der-hoffnung.de/SDH/typo3conf/ext/ams_lib/wmvplayer/wmvplayer.xaml"/>
+		<bookmark name="hörbuchFM" url="http://85.10.203.233/;stream.mp3"/>
+		<bookmark name="Klassik Radio" url="http://edge.live.mp3.mdn.newmedia.nacamar.net/klassikradio128/livestream.mp3"/>
+		<bookmark name="M 94.5 MP3" url="http://stream.m945.mwn.de/m945-hq.mp3.m3u"/>
+		<bookmark name="M 94.5 Ogg" url="http://stream.m945.mwn.de/m945-hq.ogg.m3u"/>
+		<bookmark name="Motor FM" url="http://www.motorfm.de/stream-berlin"/>
+		<bookmark name="NE-WS 89.4" url="http://edge.live.msmedia.mdn.newmedia.nacamar.net/ps-news894$livestream.wma"/>
+		<bookmark name="Project Reloaded" url="http://edge.live.mp3.mdn.newmedia.nacamar.net/projectreloaded/livestream.mp3"/>
+		<bookmark name="Punkrockers Radio" url="http://stream.lowl.de/prr.pls"/>
+		<bookmark name="Radio Exodus" url="http://stream.radio-exodus.de:9090/listen.pls"/>
+		<bookmark name="Radio LightStorm" url="http://184.107.161.2:9980/listen.pls"/>
+		<bookmark name="RADIO BOB! - Hessen Rock'n Pop" url="http://stream.bobblogger.de/stream.m3u"/>
+		<bookmark name="Radio FFH" url="mms://62.27.87.46/radioffh$livestream2.wma"/>
+		<bookmark name="listen" url="http://stream.multicult20.de:8000/listen.pls"/>
+		<bookmark name="Radio multicult2.0 Ogg" url="http://ogg.multicult20.de:80/stream128.ogg.m3u"/>
+		<bookmark name="radio TOP 40" url="http://rheinwelle.s2.onlinestream.de/listen1.m3u"/>
+		<bookmark name="radio TOP 40 Electro" url="http://stream.hoerradar.de/mp3-radiotop40-192"/>
+		<bookmark name="Radio-Z" url="http://www.radio-z.net/Radio-Z.m3u"/>
+		<bookmark name="Rockland Radio" url="http://www.rockland.de/fileadmin/user_upload/Streams/rockland.m3u"/>
+		<bookmark name="Radio Salü" url="http://62.27.44.60:80/radiosalue/livestream96s.mp3"/>
+		<bookmark name="Singlestreff-Radio" url="http://87.118.119.128:10300/"/>
+		<bookmark name="Sunshine live" url="http://62.26.214.248/sunshinelive/livestream.mp3"/>
+		<bookmark name="techno4ever.net" url="http://listen.to.techno4ever.net"/>
+		<bookmark name="Youth FM" url="http://www.youth-fm.de/yfm.m3u"/>
+	</group>
+	<group name="Sweden">
+		<bookmark name="Radioseven" url="http://sc3.radioseven.se:8500"/>
+	</group>
+	<group name="Russia">
+		<bookmark name="42fm" url="http://radio.spark-media.ru:8000/42fm"/>
+		<bookmark name="Aena" url="http://radio.spark-media.ru:8000/aena"/>
+		<bookmark name="AfterHours.FM" url="http://radio.spark-media.ru:8000/afterhours"/>
+		<bookmark name="AniDUB" url="http://radio.spark-media.ru:8000/anidub"/>
+		<bookmark name="AnimeNfo" url="http://radio.spark-media.ru:8000/animenfo"/>
+		<bookmark name="BBC World Service (eng)" url="http://radio.spark-media.ru:8000/bbc"/>
+		<bookmark name="BOOYYA DnB" url="http://radio.spark-media.ru:8000/booyya_dnb"/>
+		<bookmark name="BOOYYA Русский Рэп" url="http://radio.spark-media.ru:8000/booyaa_rusrap"/>
+		<bookmark name="BPM FM" url="http://radio.spark-media.ru:8000/bpm_fm"/>
+		<bookmark name="Bachata" url="http://radio.spark-media.ru:8000/bachata"/>
+		<bookmark name="Beat FM" url="http://radio.spark-media.ru:8000/beatfm"/>
+		<bookmark name="Beirut Nights" url="http://radio.spark-media.ru:8000/beirut"/>
+		<bookmark name="BestDance FM" url="http://radio.spark-media.ru:8000/bestdance"/>
+		<bookmark name="Biker" url="http://radio.spark-media.ru:8000/biker"/>
+		<bookmark name="Business FM" url="http://radio.spark-media.ru:8000/business"/>
+		<bookmark name="ChroniX Aggression" url="http://radio.spark-media.ru:8000/chronix_aggression"/>
+		<bookmark name="ChroniX Grit" url="http://radio.spark-media.ru:8000/chronix_grit"/>
+		<bookmark name="ChroniX Metal" url="http://radio.spark-media.ru:8000/chronix_metal"/>
+		<bookmark name="Cowboy Bills Radio" url="http://radio.spark-media.ru:8000/cowboybills"/>
+		<bookmark name="DFM" url="http://radio.spark-media.ru:8000/dfm"/>
+		<bookmark name="DI.fm Electro House" url="http://radio.spark-media.ru:8000/difm_electrohouse"/>
+		<bookmark name="Dark-Radio Gothic" url="http://radio.spark-media.ru:8000/dark_radiogothic"/>
+		<bookmark name="Deathmetal.at" url="http://radio.spark-media.ru:8000/deathmetal"/>
+		<bookmark name="DnbRadio" url="http://radio.spark-media.ru:8000/dnbradio"/>
+		<bookmark name="ElectroManiacs-fm" url="http://radio.spark-media.ru:8000/electromaniacs"/>
+		<bookmark name="ElectroN" url="http://radio.spark-media.ru:8000/electron"/>
+		<bookmark name="FlyNew" url="http://radio.spark-media.ru:8000/flynew"/>
+		<bookmark name="GamePlay" url="http://radio.spark-media.ru:8000/gameplay"/>
+		<bookmark name="Garage FM" url="http://radio.spark-media.ru:8000/garagefm"/>
+		<bookmark name="Gothic Radio" url="http://radio.spark-media.ru:8000/gothic"/>
+		<bookmark name="Hard Radio" url="http://radio.spark-media.ru:8000/hardradio"/>
+		<bookmark name="J-Station" url="http://radio.spark-media.ru:8000/jstation"/>
+		<bookmark name="Jazz" url="http://radio.spark-media.ru:8000/jazz"/>
+		<bookmark name="Keygen FM" url="http://radio.spark-media.ru:8000/keygen"/>
+		<bookmark name="Kids Hits" url="http://radio.spark-media.ru:8000/kidshits"/>
+		<bookmark name="Kiss FM" url="http://radio.spark-media.ru:8000/kiss"/>
+		<bookmark name="Lounge" url="http://radio.spark-media.ru:8000/lounge"/>
+		<bookmark name="Love RNB" url="http://radio.spark-media.ru:8000/love_rnb"/>
+		<bookmark name="Love Radio" url="http://radio.spark-media.ru:8000/love"/>
+		<bookmark name="MakkiRUS" url="http://radio.spark-media.ru:8000/makkirus"/>
+		<bookmark name="MakkiRUS-Light" url="http://radio.spark-media.ru:8000/makkiruslight"/>
+		<bookmark name="MakkiRUS-Mix" url="http://radio.spark-media.ru:8000/makkirusmix"/>
+		<bookmark name="MegaDance Club FM" url="http://radio.spark-media.ru:8000/megadanceclub"/>
+		<bookmark name="Metro" url="http://radio.spark-media.ru:8000/metro"/>
+		<bookmark name="NETradio ETHNOZA" url="http://radio.spark-media.ru:8000/ethnoza"/>
+		<bookmark name="OnlyOldSkool" url="http://radio.spark-media.ru:8000/onlyoldskool"/>
+		<bookmark name="Paradise" url="http://radio.spark-media.ru:8000/paradise"/>
+		<bookmark name="PlayZoom" url="http://radio.spark-media.ru:8000/playzoom"/>
+		<bookmark name="Plus FM" url="http://radio.spark-media.ru:8000/plusfm"/>
+		<bookmark name="Premium" url="http://radio.spark-media.ru:8000/premium"/>
+		<bookmark name="Progressive Welt" url="http://radio.spark-media.ru:8000/pwelt"/>
+		<bookmark name="Psycho Radio" url="http://radio.spark-media.ru:8000/psychoradio"/>
+		<bookmark name="PulsRadio" url="http://radio.spark-media.ru:8000/puls"/>
+		<bookmark name="REAL FM DnB" url="http://radio.spark-media.ru:8000/realfm_dnb"/>
+		<bookmark name="REAL FM Hip-Hop &amp; Rap" url="http://radio.spark-media.ru:8000/realfm_rap"/>
+		<bookmark name="Radio Forex" url="http://radio.spark-media.ru:8000/forex"/>
+		<bookmark name="Radiocafe" url="http://radio.spark-media.ru:8000/radiocafe"/>
+		<bookmark name="Record Online" url="http://radio.spark-media.ru:8000/record"/>
+		<bookmark name="Rock Online" url="http://radio.spark-media.ru:8000/rockonline"/>
+		<bookmark name="Rock Radio 1" url="http://radio.spark-media.ru:8000/rockradio1"/>
+		<bookmark name="Russian Radio NY" url="http://radio.spark-media.ru:8000/russianradiony"/>
+		<bookmark name="Saint-P" url="http://radio.spark-media.ru:8000/saintp"/>
+		<bookmark name="Schwarze Welle" url="http://radio.spark-media.ru:8000/schwarze_welle"/>
+		<bookmark name="Sky.FM - Smooth jazz" url="http://radio.spark-media.ru:8000/skyfm_smoothjazz"/>
+		<bookmark name="SpeedGarage.net" url="http://radio.spark-media.ru:8000/speedgarage"/>
+		<bookmark name="StillStream" url="http://radio.spark-media.ru:8000/stillstream"/>
+		<bookmark name="Suck my duck" url="http://radio.spark-media.ru:8000/smd"/>
+		<bookmark name="SunRadio Black" url="http://radio.spark-media.ru:8000/sunradio_black"/>
+		<bookmark name="SunshineFM" url="http://radio.spark-media.ru:8000/sunshinefm"/>
+		<bookmark name="Synth Radio" url="http://radio.spark-media.ru:8000/synth_radio"/>
+		<bookmark name="Teodor Radio" url="http://radio.spark-media.ru:8000/teodor"/>
+		<bookmark name="Top" url="http://radio.spark-media.ru:8000/top"/>
+		<bookmark name="Ultra" url="http://radio.spark-media.ru:8000/ultra"/>
+		<bookmark name="Wolf Lair Radio" url="http://radio.spark-media.ru:8000/wolf_lair"/>
+		<bookmark name="Авторадио" url="http://radio.spark-media.ru:8000/avtoradio"/>
+		<bookmark name="ВКонтакте" url="http://radio.spark-media.ru:8000/vkontakte"/>
+		<bookmark name="Валар" url="http://radio.spark-media.ru:8000/valar"/>
+		<bookmark name="Вереск" url="http://radio.spark-media.ru:8000/veresk"/>
+		<bookmark name="Голос Ангары" url="http://radio.spark-media.ru:8000/angara"/>
+		<bookmark name="Детское. Песни" url="http://radio.spark-media.ru:8000/childsongs"/>
+		<bookmark name="Детское. Сказки" url="http://radio.spark-media.ru:8000/childtales"/>
+		<bookmark name="Дорожное" url="http://radio.spark-media.ru:8000/dorojnoe"/>
+		<bookmark name="Европа плюс" url="http://radio.spark-media.ru:8000/europaplus"/>
+		<bookmark name="Зайцев.FM | Альтернатива" url="http://radio.spark-media.ru:8000/zaycev_alternativa"/>
+		<bookmark name="Зайцев.FM | Поп-музыка" url="http://radio.spark-media.ru:8000/zaycev"/>
+		<bookmark name="Кабриолет" url="http://radio.spark-media.ru:8000/kabriolet"/>
+		<bookmark name="Казантип" url="http://radio.spark-media.ru:8000/kazantip"/>
+		<bookmark name="Кафе Шансон" url="http://radio.spark-media.ru:8000/kafe_shanson"/>
+		<bookmark name="Классическая музыка" url="http://radio.spark-media.ru:8000/classica"/>
+		<bookmark name="Крутушка" url="http://radio.spark-media.ru:8000/krutushka"/>
+		<bookmark name="Кукуруза" url="http://radio.spark-media.ru:8000/kukuruza"/>
+		<bookmark name="Маяк" url="http://radio.spark-media.ru:8000/radiomayak"/>
+		<bookmark name="Милицейская волна" url="http://radio.spark-media.ru:8000/police"/>
+		<bookmark name="Наше радио" url="http://radio.spark-media.ru:8000/nashe"/>
+		<bookmark name="Нео радио. Вне Жанра" url="http://radio.spark-media.ru:8000/neovne"/>
+		<bookmark name="Новое чистое радио" url="http://radio.spark-media.ru:8000/novoe"/>
+		<bookmark name="Первое Эмоциональное Радио" url="http://radio.spark-media.ru:8000/emoradio"/>
+		<bookmark name="Пилот" url="http://radio.spark-media.ru:8000/pilot"/>
+		<bookmark name="Прямой наводкой" url="http://radio.spark-media.ru:8000/tank"/>
+		<bookmark name="Радiо з Криiвки" url="http://radio.spark-media.ru:8000/kryjivka"/>
+		<bookmark name="Радио 13" url="http://radio.spark-media.ru:8000/radio13"/>
+		<bookmark name="Радио 404" url="http://radio.spark-media.ru:8000/radio404"/>
+		<bookmark name="Радио 4LiFE" url="http://radio.spark-media.ru:8000/for_life"/>
+		<bookmark name="Радио NEXT" url="http://radio.spark-media.ru:8000/radionext"/>
+		<bookmark name="Радио Дача" url="http://radio.spark-media.ru:8000/dacha"/>
+		<bookmark name="Радио ОК" url="http://radio.spark-media.ru:8000/radio_ok"/>
+		<bookmark name="Радио Свобода" url="http://radio.spark-media.ru:8000/svoboda"/>
+		<bookmark name="Ренесанс" url="http://radio.spark-media.ru:8000/renesans"/>
+		<bookmark name="Ретро FM" url="http://radio.spark-media.ru:8000/retro"/>
+		<bookmark name="Рокс" url="http://radio.spark-media.ru:8000/roks"/>
+		<bookmark name="Русское радио" url="http://radio.spark-media.ru:8000/rusradio"/>
+		<bookmark name="Серебряный дождь" url="http://radio.spark-media.ru:8000/silverrain"/>
+		<bookmark name="София" url="http://radio.spark-media.ru:8000/sofia"/>
+		<bookmark name="Спорт" url="http://radio.spark-media.ru:8000/sport"/>
+		<bookmark name="Станция 2.0" url="http://radio.spark-media.ru:8000/station20"/>
+		<bookmark name="Старое радио" url="http://radio.spark-media.ru:8000/staroe"/>
+		<bookmark name="Тихий Дон" url="http://radio.spark-media.ru:8000/tihdon"/>
+		<bookmark name="Финам FM" url="http://radio.spark-media.ru:8000/finam"/>
+		<bookmark name="Шансон" url="http://radio.spark-media.ru:8000/shanson"/>
+		<bookmark name="Шторм" url="http://radio.spark-media.ru:8000/shtorm"/>
+		<bookmark name="Эльдорадио" url="http://radio.spark-media.ru:8000/eldoradio"/>
+		<bookmark name="Эльф" url="http://radio.spark-media.ru:8000/elf"/>
+		<bookmark name="Эхо Москвы" url="http://radio.spark-media.ru:8000/echomsk"/>
+		<bookmark name="Юность" url="http://radio.spark-media.ru:8000/unost"/>
+		<bookmark name="farpastpost" url="http://radio.spark-media.ru:8000/farpastpost"/>
+	</group>
+	<group name="England">
+		<bookmark name="shouthostdirect13.streams.bassdrive" url="http://shouthostdirect13.streams.bassdrive.com:8202"/>
+		<bookmark name="bfbs1" url="mms://193.27.42.227/bfbs1"/>
+		<bookmark name="bfbs2" url="mms://193.27.42.227/bfbs2"/>
+		<bookmark name="tune.php?c=bfbs1" url="http://txradica.net/tune.php?c=bfbs1&amp;.wvx"/>
+		<bookmark name="frisky" url="http://www.friskyradio.com/frisky.m3u"/>
+		<bookmark name="frisky" url="http://www.friskyradio.com/frisky.asx"/>
+		<bookmark name="r1" url="http://www.bbc.co.uk/radio/listen/live/r1.asx"/>
+		<bookmark name="1xtra" url="http://www.bbc.co.uk/1xtra/realmedia/1xtra.asx"/>
+		<bookmark name="r2" url="http://www.bbc.co.uk/radio/listen/live/r2.asx"/>
+		<bookmark name="r3" url="http://bbc.co.uk/radio/listen/live/r3.asx"/>
+		<bookmark name="r4" url="http://bbc.co.uk/radio/listen/live/r4.asx"/>
+		<bookmark name="radio4_lw" url="http://www.bbc.co.uk/radio4/wm_asx/aod/radio4_lw.asx"/>
+		<bookmark name="r5l" url="http://bbc.co.uk/radio/listen/live/r5l.asx"/>
+		<bookmark name="live_sportsextra" url="http://www.bbc.co.uk/fivelive/live/live_sportsextra.asx"/>
+		<bookmark name="r6" url="http://bbc.co.uk/radio/listen/live/r6.asx"/>
+		<bookmark name="eneuk" url="http://www.bbc.co.uk/worldservice/meta/tx/nb/live/eneuk.pls"/>
+		<bookmark name="" url="http://mp32.bbc.streamuk.com:80/"/>
+		<bookmark name="live_infent_au_nb" url="http://www.bbc.co.uk/worldservice/meta/tx/nb/live_infent_au_nb.asx"/>
+	</group>
+	<group name="France">
+		<bookmark name="fip_mp3-128k" url="http://www.tv-radio.com/station/fip_mp3/fip_mp3-128k.m3u"/>
+		<bookmark name="fip_mp3-32k" url="http://www.tv-radio.com/station/fip_mp3/fip_mp3-32k.m3u"/>
+		<bookmark name="mp3-192" url="http://streams.frequence3.net/mp3-192.m3u"/>
+		<bookmark name="ogg-112" url="http://streams.frequence3.net/ogg-112.m3u"/>
+		<bookmark name="mp3-192" url="http://streams.frequence3.net/mp3-192.ram"/>
+		<bookmark name="encodernrj       # NRJ " url="mms://vipnrj.yacast.net/encodernrj"/>
+		<bookmark name="nrj_webradio01   # NRJ Hits" url="mms://vipnrj.yacast.net/nrj_webradio01"/>
+		<bookmark name="nrj_webradio02   # NRJ Groove" url="mms://vipnrj.yacast.net/nrj_webradio02"/>
+		<bookmark name="nrj_webradio03   # NRJ Pop Rock" url="mms://vipnrj.yacast.net/nrj_webradio03"/>
+		<bookmark name="nrj_webradio04   # NRJ Dance" url="mms://vipnrj.yacast.net/nrj_webradio04"/>
+		<bookmark name="nrj_webradio07   # NRJ Music Awards" url="mms://vipnrj.yacast.net/nrj_webradio07"/>
+		<bookmark name="nrj_webradio08   # NRJ ClÃ©opÃ¢tre" url="mms://vipnrj.yacast.net/nrj_webradio08"/>
+		<bookmark name="nrj_webradio09   # NRJ Quentin Tarantino" url="mms://vipnrj.yacast.net/nrj_webradio09"/>
+		<bookmark name="nrj_webradio10   # NRJ Music Tour" url="mms://vipnrj.yacast.net/nrj_webradio10"/>
+		<bookmark name="nrj_webradio11   # NRJ Electro" url="mms://vipnrj.yacast.net/nrj_webradio11"/>
+		<bookmark name="nrj_webradio12   # NRJ Tech" url="mms://vipnrj.yacast.net/nrj_webradio12"/>
+		<bookmark name="nrj_webradio13   # NRJ All French" url="mms://vipnrj.yacast.net/nrj_webradio13"/>
+		<bookmark name="nrj_webradio14   # NRJ NouveautÃ©s" url="mms://vipnrj.yacast.net/nrj_webradio14"/>
+		<bookmark name="stream.pulsradio" url="http://stream.pulsradio.com:5000"/>
+	</group>
+	<group name="Austria">
+		<bookmark name="fm4_live_worldwide" url="mms://apasf.apa.at/fm4_live_worldwide"/>
+		<bookmark name="listen" url="http://mp3stream1.apasf.apa.at:8000/listen.pls"/>
+		<bookmark name="mp3stream7.apasf.apa" url="http://mp3stream7.apasf.apa.at:8000"/>
+		<bookmark name="oe3_live" url="mms://gcssrv.pkf.speednet.at/WSX/oe3_live"/>
+		<bookmark name="kronehit" url="http://onair.krone.at/kronehit.mp3"/>
+		<bookmark name="kronehit-fresh" url="http://onair.krone.at/kronehit-fresh.mp3"/>
+		<bookmark name="kronehit-dance" url="http://onair.krone.at/kronehit-dance.mp3"/>
+		<bookmark name="kronehit-house" url="http://onair.krone.at/kronehit-house.mp3"/>
+		<bookmark name="kronehit-90sdance" url="http://onair.krone.at/kronehit-90sdance.mp3"/>
+		<bookmark name="kronehit-black" url="http://onair.krone.at/kronehit-black.mp3"/>
+		<bookmark name="kronehit-vollgas" url="http://onair.krone.at/kronehit-vollgas.mp3"/>
+		<bookmark name="kronehit-yam" url="http://onair.krone.at/kronehit-yam.mp3"/>
+		<bookmark name="kronehit-fanradio" url="http://onair.krone.at/kronehit-fanradio.mp3"/>
+		<bookmark name="kronehit-classics.mp3  # Classics. Teils auch als Jukebox anmoderiert" url="http://onair.krone.at/kronehit-classics.mp3"/>
+		<bookmark name="kronehit-relax" url="http://onair.krone.at/kronehit-relax.mp3 "/>
+		<bookmark name="mp3stream3.apasf.apa" url="http://mp3stream3.apasf.apa.at:8000"/>
+		<bookmark name="mp3stream6.apasf.apa" url="http://mp3stream6.apasf.apa.at:8000"/>
+		<bookmark name="mp3stream4.apasf.apa" url="http://mp3stream4.apasf.apa.at:8000"/>
+		<bookmark name="rsdstream128" url="http://srvhost24.serverhosting.apa.net:8000/rsdstream128.m3u"/>
+		<bookmark name="mp3stream4.apasf.apa" url="http://mp3stream4.apasf.apa.at:8000"/>
+		<bookmark name="live" url="http://89.207.144.68:8080/live"/>
+	</group>
+	<group name="Switzerland">
+		<bookmark name="mp3_128" url="http://stream.srg-ssr.ch/drs1/mp3_128.m3u"/>
+		<bookmark name="mp3_128" url="http://stream.srg-ssr.ch/drs2/mp3_128.m3u"/>
+		<bookmark name="mp3_128" url="http://stream.srg-ssr.ch/drs3/mp3_128.m3u"/>
+		<bookmark name="mp3_128" url="http://stream.srg-ssr.ch/drs4news/mp3_128.m3u"/>
+		<bookmark name="mp3_128" url="http://stream.srg-ssr.ch/drsvirus/mp3_128.m3u"/>
+		<bookmark name="mp3_128" url="http://stream.srg-ssr.ch/drsmw/mp3_128.m3u"/>
+		<bookmark name="rsr-la1ere-high" url="http://broadcast.infomaniak.ch/rsr-la1ere-high.mp3"/>
+		<bookmark name="rsr-espace2-high" url="http://broadcast.infomaniak.ch/rsr-espace2-high.mp3"/>
+		<bookmark name="rsr-couleur3-high" url="http://broadcast.infomaniak.ch/rsr-couleur3-high.mp3"/>
+		<bookmark name="rsr-optionmusique-high" url="http://broadcast.infomaniak.ch/rsr-optionmusique-high.mp3"/>
+		<bookmark name="radio1" url="http://stream.radio1.ch:8000/radio1"/>
+		<bookmark name="listen" url="http://s3.global-streaming.net:8000/listen.pls"/>
+		<bookmark name="zuerisee" url="http://zuerisee.stream.green.ch/zuerisee.wax"/>
+		<bookmark name="listen" url="http://212.40.13.22:11000/listen.pls"/>
+		<bookmark name="mp3" url="http://www.radioswisspop.ch/live/mp3.m3u"/>
+		<bookmark name="mp3" url="http://www.radioswissjazz.ch/live/mp3.m3u"/>
+		<bookmark name="aacp" url="http://www.radioswissjazz.ch/live/aacp.m3u"/>
+		<bookmark name="aacp32" url="http://www.radioswissjazz.ch/live/aacp32.m3u"/>
+		<bookmark name="energyzuerich-high.mp3" url="http://broadcast.infomaniak.ch/energyzuerich-high.mp3.m3u"/>
+		<bookmark name="energy80s-high.mp3" url="http://broadcast.infomaniak.ch/energy80s-high.mp3.m3u"/>
+		<bookmark name="energy90s-high.mp3" url="http://broadcast.infomaniak.ch/energy90s-high.mp3.m3u"/>
+		<bookmark name="energy00s-high.mp3" url="http://broadcast.infomaniak.ch/energy00s-high.mp3.m3u"/>
+		<bookmark name="energyblack-high.mp3" url="http://broadcast.infomaniak.ch/energyblack-high.mp3.m3u"/>
+		<bookmark name="energydance-high.mp3" url="http://broadcast.infomaniak.ch/energydance-high.mp3.m3u"/>
+		<bookmark name="energyrock-high.mp3" url="http://broadcast.infomaniak.ch/energyrock-high.mp3.m3u"/>
+		<bookmark name="energysoundtrack-high.mp3" url="http://broadcast.infomaniak.ch/energysoundtrack-high.mp3.m3u"/>
+		<bookmark name="energyswiss-high.mp3" url="http://broadcast.infomaniak.ch/energyswiss-high.mp3.m3u"/>
+		<bookmark name="energycharts-high.mp3" url="http://broadcast.infomaniak.ch/energycharts-high.mp3.m3u"/>
+		<bookmark name="energylive-high.mp3" url="http://broadcast.infomaniak.ch/energylive-high.mp3.m3u"/>
+		<bookmark name="energylounge-high.mp3" url="http://broadcast.infomaniak.ch/energylounge-high.mp3.m3u"/>
+		<bookmark name="listen" url="http://www.tranceradio.ch/listen.m3u"/>
+		<bookmark name="tranceradio.ogg" url="http://trancetv.net:8002/tranceradio.ogg.m3u"/>
+	</group>
+	<group name="Netherland">
+		<bookmark name="SLAM!FM" url="http://www.true.nl/streams/slamfmlivestream.asx"/>
+	</group>
+	<group name="Canada">
+		<bookmark name="afterhours.fm" url="http://www.ah.fm/192k.m3u"/>
+	</group>
+	<group name="Australia">
+		<bookmark name="triple j" url="http://abc.net.au/res/streaming/audio/mp3/triplej.pls"/>
+	</group>
+	<group name="International">
+		<bookmark name="CocoRadio {en} Reggae aus Ghana" url="http://67.159.26.177:23002/"/>
+		<bookmark name="SomaFM: Groove Salad" url="http://ice.somafm.com/groovesalad"/>
+		<bookmark name="SomaFM: Suburbs of Goa" url="http://ice.somafm.com/suburbsofgoa"/>
+		<bookmark name="SomaDM: Indie Pop Rocks" url="http://ice.somafm.com/indiepop"/>
+		<bookmark name="LiveDNB" url="http://173.236.56.82:8006"/>
+		<bookmark name="soe.fm" url="http://www.soe.fm/one/listen.m3u"/>
+	</group>
+</group>
+</bookmarks>

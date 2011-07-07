@@ -15,6 +15,20 @@ then
 	fi
 fi
 
+# if radiotray installed, copy its configs
+if [ -x /usr/bin/radiotray ]
+then
+	radiotraydir="$HOME/.local/share/radiotray/"
+	echo "copying radio tray config and senders"
+	if [ ! -d $radiotraydir ]
+	then
+		mkdir -p $radiotraydir
+		echo $?
+	fi
+	cp radiotray/config.xml $radiotraydir
+	cp radiotray/bookmarks.xml $radiotraydir
+fi
+
 # dir for the snippetsEmu vim script
 if [ ! -d ~/.vim/after/ftplugin ]
 then
