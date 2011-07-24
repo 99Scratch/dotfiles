@@ -205,6 +205,12 @@
 			<bookmark name="listen" url="http://club.mthn.net:8256/listen.pls"/>
 			<bookmark name="listen" url="http://electro.mthn.net:8400/listen.pls"/>
 		</group>
+		<group name="Star FM">
+			<bookmark name="Star FM Maximum Rock" url="http://www.starfm.de/streams/bln_m.pls"/>
+			<bookmark name="Star FM From Hell" url="http://www.starfm.de/streams/fh_m.pls"/>
+			<bookmark name="Star FM Rock Classics" url="http://www.starfm.de/streams/rc_m.pls"/>
+			<bookmark name="Star FM Alternative" url="http://www.starfm.de/streams/alt_m.pls"/>
+		</group>
 		<group name="SWR">
 			<bookmark name="swr1bw_s" url="http://mp3-live.swr.de/swr1bw_s.m3u"/>
 			<bookmark name="swr1rp_s" url="http://mp3-live.swr.de/swr1rp_s.m3u"/>
