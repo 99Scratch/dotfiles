@@ -36,6 +36,6 @@ alias packageinstall='sudo aptitude install $(cat full.package.list-$(/bin/uname
 alias nmap-manual='HOST=127.0.0.1;for((port=1;port<=65535;++port)); do echo -en "$port ";if echo -en "open $HOST $port\nlogout\quit" | telnet 2>/dev/null | grep "Connected to" > /dev/null; then echo -en "\n\nport $port/tcp is open\n\n";fi;done | grep open'
 alias minecraft='java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3333 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3333 -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
 alias mobile_atlas_creator='java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3333 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3333 -Xmx800m -jar ~/opt/mobile_atlas_creator/Mobile_Atlas_Creator.jar'
-alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar'
+#alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias abmelden='gnome-session-save --logout --gui'
