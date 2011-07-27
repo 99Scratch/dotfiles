@@ -53,8 +53,9 @@ fi
 if [ "$color_prompt" = yes ]; then
 #    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     if [ $(whoami) != "root" ] ; then
-      PS1='${debian_chroot:+($debian_chroot)}\[\033[1;36m\]\u\[\033[1;32m\]@\[\033[1;33m\]\h\[\033[32m\]:\w\[\033[00m\]\$ '
+      PS1='${debian_chroot:+($debian_chroot)}\[\033[1;36m\]\u\[\033[1;32m\]@\[\033[1;33m\]\h\[\033[32m\]:\w\[\033[0;35m\]$(__git_ps1 "[%s]")\[\033[00m\]\$ '
     else
+      # root prompt
       PS1='${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u\[\033[1;32m\]@\[\033[1;33m\]\h\[\033[32m\]:\w\[\033[00m\]\$ '
     fi
 else
