@@ -58,3 +58,5 @@ set ruler
 " make the bell visual
 set visualbell
 
+" line numbering on
+set number
