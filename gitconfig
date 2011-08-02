@@ -14,4 +14,5 @@
 	la = log --pretty=\"format:%ad %h (%an): %s\" --date=short
 	oneline = log --pretty=oneline
 	br = branch
+	ignored = ls-files --others -i --exclude-standard
 
