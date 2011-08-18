@@ -39,4 +39,10 @@ fi
 # copy vim plugins
 cp -r vim/* ~/.vim/
 
+# git-flow-completion
+if [ ! -d ~/.bash_completion.d ]
+then
+	mkdir ~/.bash_completion.d
+fi
+cp git-flow-completion/git-flow-completion.bash ~/.bash_completion.d/
 
