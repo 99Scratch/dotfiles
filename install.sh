@@ -39,6 +39,12 @@ fi
 # copy vim plugins
 cp -r vim/* ~/.vim/
 
+# git-flow installation
+if [ ! -x /usr/local/bin/git-flow ]
+then
+	wget --no-check-certificate -q -O - https://github.com/nvie/gitflow/raw/develop/contrib/gitflow-installer.sh | sudo bash
+fi
+
 # git-flow-completion
 if [ ! -d ~/.bash_completion.d ]
 then
