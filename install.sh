@@ -50,5 +50,7 @@ if [ ! -d ~/.bash_completion.d ]
 then
 	mkdir ~/.bash_completion.d
 fi
+cd git-flow-completion/ && git submodule update
+cd ..
 cp git-flow-completion/git-flow-completion.bash ~/.bash_completion.d/
 
