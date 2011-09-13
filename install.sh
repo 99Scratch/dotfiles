@@ -54,3 +54,4 @@ cd git-flow-completion/ && git submodule update
 cd ..
 cp git-flow-completion/git-flow-completion.bash ~/.bash_completion.d/
 
+cp Xmodmap ~/.Xmodmap
