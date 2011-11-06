@@ -16,3 +16,6 @@
 	br = branch
 	ignored = ls-files --others -i --exclude-standard
 
+[core]
+        editor = vim
+
