@@ -16,6 +16,8 @@ set incsearch " ...dynamically as they are typed.
 " Automatische Einrückung (Globale Konfiguration)
 set smartindent
 set smarttab
+set shiftwidth=4
+set tabstop=4
 
 " UTF-8 als Default-Encoding
 set enc=utf-8
