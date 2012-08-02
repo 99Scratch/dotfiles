@@ -6,5 +6,6 @@ sudo aptitude install xtitle cowsay fortune-mod
 sudo aptitude install xmlstarlet
 
 # additional software
-sudo aptitude install scite bicyclerepair exuberant-ctags
+sudo aptitude install scite
+sudo aptitude install bicyclerepair exuberant-ctags
 
