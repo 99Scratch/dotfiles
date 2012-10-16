@@ -22,20 +22,24 @@ alias lt='ls -ltr'         # sort by date, most recent last
 alias lm='ls -al |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 
+# aliases manipulating normal system commands
 alias free='free -m'
-
-alias tree='tree -Csu'     # nice alternative to 'recursive ls'
-alias pg='ps waux | grep -i'
 alias mkdir='mkdir -p'
 alias more='less'
+alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 alias watch='watch -n 1'
-alias xg='cd ~/git/xdcc-grabscher/; screen -S xdcc-grabscher ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
-alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
-alias packagelist='dpkg --get-selections | /bin/grep -v deinstall$ | /bin/grep install$ | /usr/bin/awk '"'"'{print $1}'"'"' > full.package.list-$(/bin/uname -n)'
-alias packageinstall='sudo aptitude install $(cat full.package.list-$(/bin/uname -n))'
-alias nmap-manual='HOST=127.0.0.1;for((port=1;port<=65535;++port)); do echo -en "$port ";if echo -en "open $HOST $port\nlogout\quit" | telnet 2>/dev/null | grep "Connected to" > /dev/null; then echo -en "\n\nport $port/tcp is open\n\n";fi;done | grep open'
-alias minecraft='java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3333 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3333 -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
-alias mobile_atlas_creator='java -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3333 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3333 -Xmx800m -jar ~/opt/mobile_atlas_creator/Mobile_Atlas_Creator.jar'
-#alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar'
-alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
+
+# lazyness aliases
 alias abmelden='gnome-session-save --logout --gui'
+alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
+alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar'
+alias minecraft='java -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
+alias mobile_atlas_creator='java -Xmx800m -jar ~/opt/mobile_atlas_creator/Mobile_Atlas_Creator.jar'
+alias nmap-manual='HOST=127.0.0.1;for((port=1;port<=65535;++port)); do echo -en "$port ";if echo -en "open $HOST $port\nlogout\quit" | telnet 2>/dev/null | grep "Connected to" > /dev/null; then echo -en "\n\nport $port/tcp is open\n\n";fi;done | grep open'
+alias packageinstall='sudo aptitude install $(cat full.package.list-$(/bin/uname -n))'
+alias packagelist='dpkg --get-selections | /bin/grep -v deinstall$ | /bin/grep install$ | /usr/bin/awk '"'"'{print $1}'"'"' > full.package.list-$(/bin/uname -n)'
+alias pg='ps waux | grep -i'
+alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
+alias thumbsdb-delete='find . -type f -name Thumbs.db -exec rm {} \;'
+alias xg='cd ~/git/xdcc-grabscher/; screen -S xdcc-grabscher ./XG.Server.Cmd/bin/Release/XG.Server.Cmd.exe'
+
