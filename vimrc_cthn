@@ -1,0 +1,55 @@
+" http://benjamin-schweizer.de/files/temp/profile.tar.gz
+" wacom tablet
+" surfpad
+" eink reader touch 622
+" http://bit.ly/q1QMPU
+" . wiederholt letzten Befehl
+" strg+w w fenster wechseln, v .. vertical, s .. split/horizontal, c .. close,schließen, h,j,k,l entsprechendes fenster springen
+" vim -p datei1 datei2 <-- Tabs
+" t $c .. move to char $c
+" visual block markieren, dann < und > um einzurücken
+" * sucht gleiches Wort, wo Cursor gerade ist
+" fenster in vim = buffer befehl :bn/:bp buffer next/previous
+" Zeichen an aktueller Cursorposition ändern: r und dann das neue Zeichen
+" Plugin: vundle, wiked, ctrlp, powerline, matchit
+
+set background=dark
+syntax on
+colorscheme elflord
+set nocompatible
+set mouse=a
+set number
+set wildmenu
+set wildmode=longest,list,full
+set backspace=indent,eol,start " Backspace Taste
+
+set title
+set ruler
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+"set nowrap " lange zeilen nicht umbrechen
+set linebreak " bricht bei ganzen Wörtern um und nicht bei einzelnen Zeichen
+set scrolloff=2 " scrollt bereits 2 Zeilen bevor man ganz unten ist
+
+set autoindent
+set smartindent
+set expandtab " ersetzt Tabs durch Leerzeichen
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+set modeline " im Header von der Datei vim Kommandos angeben
+
+filetype plugin on
+filetype indent on
+
+map <F5> ddp
+
+autocmd BufEnter *.{c,cpp,h} setl cindent
+autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automatisch um
+
+let mapleader="," " Komma Funktion wie strg oder alt geben, damit man mehr Tastenkombinationen bauen kann
+
