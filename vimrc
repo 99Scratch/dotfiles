@@ -1,4 +1,8 @@
 set background=dark
+" 256 colors color schemes
+let &t_Co=256
+colorscheme rainbo
+
 set nocompatible
 set wildmenu
 set wildmode=longest,list,full
@@ -39,10 +43,6 @@ set enc=utf-8
 
 " Ein Tab entspricht vier Leerzeichen (wie in PEP 8 definiert)
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-
-" 256 colors color schemes
-let &t_Co=256
-colorscheme synic
 
 " to have , instead of \ as leader key
 let mapleader = ","
