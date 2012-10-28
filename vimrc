@@ -1,3 +1,9 @@
+set background=dark
+set nocompatible
+set wildmenu
+set wildmode=longest,list,full
+set mouse=a
+
 " Intuitive backspacing in insert mode
 set backspace=indent,eol,start
 
@@ -12,12 +18,21 @@ filetype indent on
 " Highlight search terms...
 set hlsearch
 set incsearch " ...dynamically as they are typed.
+set ignorecase
+set smartcase
+set linebreak
+set scrolloff=2
 
 " Automatische Einrückung (Globale Konfiguration)
+set autoindent
 set smartindent
+set expandtab
 set smarttab
-set shiftwidth=4
-set tabstop=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
+set modeline
 
 " UTF-8 als Default-Encoding
 set enc=utf-8
