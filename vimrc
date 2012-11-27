@@ -6,7 +6,7 @@ colorscheme rainbo
 set nocompatible
 set wildmenu
 set wildmode=longest,list,full
-set mouse=a
+"set mouse=a
 
 " Intuitive backspacing in insert mode
 set backspace=indent,eol,start
@@ -24,6 +24,7 @@ set hlsearch
 set incsearch " ...dynamically as they are typed.
 set ignorecase
 set smartcase
+"set nowrap " lange zeilen nicht umbrechen
 set linebreak
 set scrolloff=2
 
@@ -41,9 +42,6 @@ set modeline
 " UTF-8 als Default-Encoding
 set enc=utf-8
 
-" Ein Tab entspricht vier Leerzeichen (wie in PEP 8 definiert)
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-
 " to have , instead of \ as leader key
 let mapleader = ","
 
@@ -51,9 +49,6 @@ let mapleader = ","
 "
 " taglist toggle
 nnoremap <silent> <F8> :TlistToggle<CR>
-
-" Start python on F5
-autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
 
 " more than 20 commands and search patterns in history
 set history=1000
@@ -77,3 +72,12 @@ set visualbell
 
 " line numbering on
 set number
+
+autocmd BufEnter *.{c,cpp,h} setl cindent
+autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automatisch um
+
+" Ein Tab entspricht vier Leerzeichen (wie in PEP 8 definiert)
+autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+" Start python on F5
+autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
+
