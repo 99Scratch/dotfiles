@@ -217,6 +217,10 @@ if [ -f ~/.bash_aliases_more ]; then
     . ~/.bash_aliases_more
 fi
 
+if [ -f ~/bin/sbm.sh ]; then
+    . ~/bin/sbm.sh
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
