@@ -6,6 +6,11 @@ cp vimrc ~/.vimrc
 cp gitconfig  ~/.gitconfig
 cp SciTEUser.properties ~/.SciTEUser.properties
 cp -r bin ~
+
+# copy vim plugins
+cp -r vim/* ~/.vim/
+
+# scite
 if [ -d /usr/share/scite ] 
 then
 	if [ ! -f /usr/share/scite/locale.properties ] 
@@ -29,15 +34,12 @@ then
 	cp radiotray/bookmarks.xml $radiotraydir
 fi
 
-# dir for the snippetsEmu vim script
-if [ ! -d ~/.vim/after/ftplugin ]
-then
-	echo "creating ~/.vim/after/ftplugin"
-	mkdir -p ~/.vim/after/ftplugin
-fi
+# no capslock pls
+cp Xmodmap ~/.Xmodmap
 
-# copy vim plugins
-cp -r vim/* ~/.vim/
+#git submodules
+git submodule init
+git submodule update
 
 # git-flow installation
 if [ ! -x /usr/local/bin/git-flow ]
@@ -50,8 +52,6 @@ if [ ! -d ~/.bash_completion.d ]
 then
 	mkdir ~/.bash_completion.d
 fi
-cd git-flow-completion/ && git submodule update
-cd ..
-cp git-flow-completion/git-flow-completion.bash ~/.bash_completion.d/
+cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
 
-cp Xmodmap ~/.Xmodmap
+
