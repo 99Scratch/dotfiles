@@ -5,3 +5,6 @@
 	path = git-flow-completion
 	url = git://github.com/bobthecow/git-flow-completion.git
 
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
