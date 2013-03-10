@@ -3,7 +3,6 @@ set background=dark
 let &t_Co=256
 colorscheme rainbo
 
-set nocompatible
 set wildmenu
 set wildmode=longest,list,full
 "set mouse=a
@@ -15,9 +14,6 @@ set backspace=indent,eol,start
 " Run :filetype (without args) to see what you may have
 " to turn on yourself, or just set them all to be sure.
 syntax on
-filetype on " essential for taglist
-filetype plugin on " essential for NERD Commenter
-filetype indent on
 
 " Highlight search terms...
 set hlsearch
@@ -76,8 +72,28 @@ set number
 autocmd BufEnter *.{c,cpp,h} setl cindent
 autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automatisch um
 
-" Ein Tab entspricht vier Leerzeichen (wie in PEP 8 definiert)
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-" Start python on F5
-autocmd FileType python map <F5> :w<CR>:!python "%"<CR>
+" ############
+" ## VUNDLE ##
+" ############
+set nocompatible
+filetype off " required for vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" original repos on github
+Bundle 'othree/html5.vim'
+
+filetype plugin indent on " required for vundle
+
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
 
