@@ -7,7 +7,13 @@ cp gitconfig  ~/.gitconfig
 cp SciTEUser.properties ~/.SciTEUser.properties
 cp -r bin ~
 
+# clean up personal vim dir
+if [ -d ~/.vim ]
+then
+  rm -rf ~/.vim
+fi
 # copy vim plugins
+mkdir ~/.vim
 cp -r vim/* ~/.vim/
 
 # scite
