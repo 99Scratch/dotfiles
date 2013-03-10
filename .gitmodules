@@ -2,7 +2,7 @@
 	path = gitflow
 	url = git://github.com/nvie/gitflow.git
 
-[submodule "git-flow-completion"]
+[submodule "gitflow-completion"]
 	path = gitflow-completion
 	url = git://github.com/bobthecow/git-flow-completion.git
 
