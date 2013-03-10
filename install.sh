@@ -37,7 +37,7 @@ fi
 # no capslock pls
 cp Xmodmap ~/.Xmodmap
 
-#git submodules
+# get git submodules: gitflow, gitflow-completion, vundle
 git submodule init
 git submodule update
 
@@ -54,4 +54,6 @@ then
 fi
 cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
 
+# vundle initialisation
+vim +BundleInstall +qall
 
