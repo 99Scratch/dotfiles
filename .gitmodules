@@ -1,8 +1,9 @@
 [submodule "gitflow"]
 	path = gitflow
 	url = git://github.com/nvie/gitflow.git
+
 [submodule "git-flow-completion"]
-	path = git-flow-completion
+	path = gitflow-completion
 	url = git://github.com/bobthecow/git-flow-completion.git
 
 [submodule "vim/bundle/vundle"]
