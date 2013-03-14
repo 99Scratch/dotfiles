@@ -3,9 +3,7 @@
 	email = git-dev@linux4tw.de
 
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+  ui = true
 
 [alias]
 	co = checkout
