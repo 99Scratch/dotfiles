@@ -81,10 +81,10 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-
 " original repos on github
+Bundle 'gmarik/vundle'
 Bundle 'othree/html5.vim'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on " required for vundle
 
