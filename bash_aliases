@@ -31,6 +31,7 @@ alias watch='watch -n 1'
 
 # lazyness aliases
 alias abmelden='gnome-session-save --logout --gui'
+alias fakt='git-addremove; git commit -m "f akt"; git push'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar &'
 alias minecraft='java -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
