@@ -202,6 +202,9 @@ function apt-history(){
       esac
 }
 
+if [ -d ~/bin/ ]; then
+  PATH=$PATH:$HOME/bin
+fi
 
 
 # Alias definitions.
