@@ -85,6 +85,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Strubbl/vim-json'
 
 filetype plugin indent on " required for vundle
 
