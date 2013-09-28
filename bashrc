@@ -170,8 +170,10 @@ NC='\e[0m'              # No Color
 echo -e "${CYAN}This is BASH ${RED}${BASH_VERSION%.*}\
 ${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
 date
-if [ -x /usr/games/fortune ]; then
-    /usr/games/fortune -s | /usr/games/cowthink    # Makes our day a bit more fun.... :-)
+fortunemod=`which fortune`
+cowthinkbin=`which cowthink`
+if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
+    $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
 fi
 
 function _exit()        # Function to run upon exit of shell.
@@ -202,6 +204,9 @@ function apt-history(){
       esac
 }
 
+if [ -d ~/bin/ ]; then
+  PATH=$PATH:$HOME/bin
+fi
 
 
 # Alias definitions.
