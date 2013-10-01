@@ -19,3 +19,8 @@
 
 [push]
   default = matching
+
+[http]
+  proxy = 127.0.0.1:3128
+
+
