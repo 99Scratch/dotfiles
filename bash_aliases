@@ -31,6 +31,7 @@ alias watch='watch -n 1'
 
 # lazyness aliases
 alias abmelden='gnome-session-save --logout --gui'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias banIp='iptables -A INPUT -j DROP -s'
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
 alias fakt='git-addremove; git commit -m "f akt"; git push'
