@@ -24,6 +24,7 @@ alias lr='ls -lR'          # recursive ls
 
 # aliases manipulating normal system commands
 alias free='free -m'
+alias glances='glances -e'
 alias mkdir='mkdir -p'
 alias more='less'
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
