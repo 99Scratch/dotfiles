@@ -24,6 +24,7 @@ alias lr='ls -lR'          # recursive ls
 
 # aliases manipulating normal system commands
 alias free='free -m'
+alias glances='glances -e'
 alias mkdir='mkdir -p'
 alias more='less'
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
@@ -31,6 +32,7 @@ alias watch='watch -n 1'
 
 # lazyness aliases
 alias abmelden='gnome-session-save --logout --gui'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias banIp='iptables -A INPUT -j DROP -s'
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
 alias fakt='git-addremove; git commit -m "f akt"; git push'
@@ -46,6 +48,6 @@ alias pg='ps waux | grep -i'
 alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
 alias songbird='nightingale'
 alias thumbsdb-delete='find . -type f -name Thumbs.db -exec rm {} \;'
-alias xg='cd ~/git/xdcc-grabscher/; screen -S xdcc-grabscher ./Server.Cmd/bin/Release/Server.Cmd.exe'
+alias xg='cd ~/opt/xg/; screen -S xdcc-grabscher ./Server.Cmd.exe'
 #alias whatthecommit='git commit -m "$(curl whatthecommit.com | grep \'^<p>\' | cut -d\'>\' -f2-)"'
 
