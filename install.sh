@@ -5,7 +5,9 @@ cp screenrc ~/.screenrc
 cp vimrc ~/.vimrc
 cp gitconfig  ~/.gitconfig
 cp SciTEUser.properties ~/.SciTEUser.properties
+
 cp -r bin ~
+cp gibo/gibo ~/bin/
 
 # clean up personal vim dir
 if [ -d ~/.vim ]
@@ -59,8 +61,10 @@ then
 	mkdir ~/.bash_completion.d
 fi
 cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
+cp gibo/gibo-completion.bash ~/.bash_completion.d/
 
 # vundle initialisation
 vim +BundleInstall +qall
 
 cp mimeapps.list ~/.local/share/applications/mimeapps.list
+
