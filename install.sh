@@ -63,3 +63,4 @@ cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
 # vundle initialisation
 vim +BundleInstall +qall
 
+cp mimeapps.list ~/.local/share/applications/mimeapps.list
