@@ -234,5 +234,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-source ~/.bash_completion.d/git-flow-completion.bash
+if [ -d ~/.bash_completion.d ]; then
+  for baco in ~/.bash_completion.d/*.bash ; do
+    . $baco
+  done
+fi
 
