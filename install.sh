@@ -61,6 +61,7 @@ fi
 
 # git-flow-completion
 if [ -x /usr/local/bin/git-flow ]
+then
   cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
 fi
 
