@@ -7,3 +7,6 @@
 [submodule "vim/bundle/vundle"]
 	path = vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "gibo"]
+	path = gibo
+	url = https://github.com/simonwhitaker/gibo.git
