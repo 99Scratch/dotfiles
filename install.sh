@@ -73,5 +73,8 @@ cp gibo/gibo-completion.bash ~/.bash_completion.d/
 # vundle initialisation
 vim +BundleInstall +qall
 
-cp mimeapps.list ~/.local/share/applications/mimeapps.list
+if [ ! -d ~/.local/share/applications/ ]
+then
+  cp mimeapps.list ~/.local/share/applications/mimeapps.list
+fi
 
