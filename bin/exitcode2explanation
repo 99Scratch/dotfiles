@@ -1,0 +1,2 @@
+#!/bin/bash
+perl -le 'print $!+0, "\t", $!++ for 0..127'
