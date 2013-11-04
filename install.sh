@@ -15,6 +15,13 @@ fi
 mkdir ~/.vim
 cp -r vim/* ~/.vim/
 
+# i3
+if [ -d ~/.i3 ]
+then
+  rm -rf ~/.i3
+fi
+cp -r i3 ~/.i3
+
 # bash-completion
 if [ ! -d ~/.bash_completion.d ]
 then
