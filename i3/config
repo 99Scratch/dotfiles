@@ -168,5 +168,7 @@ bar {
 }
 
 exec nautilus -n
+exec pa-applet
+exec numlockx
 
 # vim:filetype=i3
