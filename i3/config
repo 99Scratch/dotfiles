@@ -163,3 +163,5 @@ bindsym $mod+End mode "$mode_system"
 bar {
         status_command i3status --config ~/.i3/status.conf
 }
+
+# vim:filetype=i3

@@ -86,6 +86,7 @@ Bundle 'gmarik/vundle'
 Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'elzr/vim-json'
+Bundle 'PotatoesMaster/i3-vim-syntax'
 Bundle 'git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git'
 
 filetype plugin indent on " required for vundle
