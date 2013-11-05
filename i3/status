@@ -14,8 +14,8 @@ general {
 #order += "ipv6"
 order += "disk /"
 order += "disk /home"
-order += "disk /home/strubbl/movies"
-order += "disk /home/strubbl/movies/serien"
+order += "disk ~/movies"
+order += "disk ~/movies/serien"
 order += "run_watch DHCP"
 #order += "run_watch VPN"
 #order += "wireless wlan0"
@@ -70,11 +70,11 @@ disk "/home" {
         format = "~ %free"
 }
 
-disk "/home/strubbl/movies" {
+disk "~/movies" {
         format = "m %free"
 }
 
-disk "/home/strubbl/movies/serien" {
+disk "~/movies/serien" {
         format = "s %free"
 }
 
