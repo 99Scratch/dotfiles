@@ -62,7 +62,7 @@ tztime local {
 }
 
 cpu_usage {
-        format = "%usage"
+        format = "CPU: %usage"
 }
 
 load {
