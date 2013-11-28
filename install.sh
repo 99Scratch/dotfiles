@@ -1,20 +1,32 @@
 #!/bin/bash
 cp bashrc ~/.bashrc
 cp bash_aliases ~/.bash_aliases
+cp -r bin ~
+cp gitconfig  ~/.gitconfig
 cp screenrc ~/.screenrc
 cp vimrc ~/.vimrc
-cp gitconfig  ~/.gitconfig
-cp SciTEUser.properties ~/.SciTEUser.properties
-cp -r bin ~
 
 # clean up personal vim dir
 if [ -d ~/.vim ]
 then
   rm -rf ~/.vim
 fi
-# copy vim plugins
+# vim plugins
 mkdir ~/.vim
 cp -r vim/* ~/.vim/
+
+# i3
+if [ -d ~/.i3 ]
+then
+  rm -rf ~/.i3
+fi
+cp -r i3 ~/.i3
+
+# bash-completion
+if [ ! -d ~/.bash_completion.d ]
+then
+	mkdir ~/.bash_completion.d
+fi
 
 # scite
 if [ -d /usr/share/scite ] 
@@ -24,9 +36,10 @@ then
 		echo "copying german locale for scite"
 		sudo cp locale.de.properties /usr/share/scite/locale.properties
 	fi
+  cp SciTEUser.properties ~/.SciTEUser.properties
 fi
 
-# if radiotray installed, copy its configs
+# radiotray
 if [ -x /usr/bin/radiotray ]
 then
 	radiotraydir="$HOME/.local/share/radiotray/"
@@ -43,7 +56,7 @@ fi
 # no capslock pls
 cp Xmodmap ~/.Xmodmap
 
-# get git submodules: gitflow, gitflow-completion, vundle
+# git submodules
 git submodule init
 git submodule update
 
@@ -54,12 +67,21 @@ then
 fi
 
 # git-flow-completion
-if [ ! -d ~/.bash_completion.d ]
+if [ -x /usr/local/bin/git-flow ]
 then
-	mkdir ~/.bash_completion.d
+  cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
 fi
-cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
+
+# initialiaze gibo
+cp gibo/gibo ~/bin/
+cp gibo/gibo-completion.bash ~/.bash_completion.d/
+~/bin/gibo -u
 
 # vundle initialisation
 vim +BundleInstall +qall
+
+if [ ! -d ~/.local/share/applications/ ]
+then
+  cp mimeapps.list ~/.local/share/applications/mimeapps.list
+fi
 

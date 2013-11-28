@@ -24,6 +24,7 @@ alias lr='ls -lR'          # recursive ls
 
 # aliases manipulating normal system commands
 alias free='free -m'
+alias glances='glances -e'
 alias mkdir='mkdir -p'
 alias more='less'
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
@@ -33,6 +34,7 @@ alias watch='watch -n 1'
 alias abmelden='gnome-session-save --logout --gui'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias banIp='iptables -A INPUT -j DROP -s'
+alias busy='my_file=$(find /usr/include -type f | sort -R | head -n 1); my_len=$(wc -l $my_file | awk "{print $1}"); let "r = $RANDOM % $my_len" 2>/dev/null; vim +$r $my_file'
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
 alias fakt='git-addremove; git commit -m "f akt"; git push'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'

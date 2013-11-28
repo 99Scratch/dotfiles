@@ -1,0 +1,2 @@
+#!/bin/bash
+gst-launch-0.10 v4l2src ! videorate !  ffmpegcolorspace ! queue ! theoraenc ! oggmux ! filesink location=$1
