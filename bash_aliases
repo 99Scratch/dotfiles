@@ -36,7 +36,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias banIp='iptables -A INPUT -j DROP -s'
 alias busy='my_file=$(find /usr/include -type f | sort -R | head -n 1); my_len=$(wc -l $my_file | awk "{print $1}"); let "r = $RANDOM % $my_len" 2>/dev/null; vim +$r $my_file'
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
-alias fakt='git-addremove; git commit -m "f akt"; git push'
+alias fakt='git add -A; git commit -m "f akt"; git push'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar &'
 alias minecraft='java -Xmx800m -jar ~/opt/minecraft/minecraft.jar'

@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# git-addremove
-git add .
-git ls-files --deleted | sed 's/ /\\ /g' | sed "s/'/\\\'/g" | xargs git rm
-
