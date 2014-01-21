@@ -49,6 +49,6 @@ alias pg='ps waux | grep -i'
 alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
 alias songbird='nightingale'
 alias thumbsdb-delete='find . -type f -name Thumbs.db -exec rm {} \;'
-alias xg='cd ~/opt/xg/; screen -S xdcc-grabscher ./Server.Cmd.exe'
+alias xg='cd ~/opt/xg/; screen -S xdcc-grabscher ./xg.application'
 #alias whatthecommit='git commit -m "$(curl whatthecommit.com | grep \'^<p>\' | cut -d\'>\' -f2-)"'
 
