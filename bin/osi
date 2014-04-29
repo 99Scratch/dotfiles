@@ -1,0 +1,116 @@
+#!/bin/sh
+# vim: ts=4
+#
+# Copyright (c) 2010-2013 Benjamin Schweizer.
+#
+# Abstract
+# ~~~~~~~~
+# Detects OS name+version/arch
+#
+# Authors
+# ~~~~~~~
+# Benjamin Schweizer, http://benjamin-schweizer.de/contact
+#
+# Changes
+# ~~~~~~~
+# 2013-07-21, benjamin: added linux-lxc
+# 2013-02-27, benjamin: reordered linux version
+# 2012-07-02, benjamin: added virtualpc+xen detection
+# 2011-07-11, benjamin: default model
+# 2011-02-17, benjamin: vm cleanups
+# 2011-02-16, benjamin: improved sunos support
+# 2010-06-01, benjamin: added sunos support
+# 2010-04-07, benjamin: changed vm detection, added openfiler support
+# 2010-03-11, benjamin: debian testing fix
+# 2010-03-10, benjamin: added freebsd hypervisor detection
+# 2010-03-09, benjamin: added linux hypervisor detection
+# 2010-03-02, benjamin: ubuntu fix
+# 2010-02-25, benjamin: rewrite
+# 2010-02-17, benjamin: initial release
+#
+# Todo
+# ~~~~
+# - testing on various os types
+#
+
+NAME=`uname -s`
+VERSION="Unknown"
+ARCH=`uname -m`
+MODEL=""
+NUMCORES=0
+MEMORY=0    # gigs
+
+case "$NAME" in
+    Darwin)
+        NAME=`sw_vers -productName`
+        VERSION=`sw_vers -productVersion`
+        test "$ARCH" = "Power Macintosh" && ARCH="ppc"
+        ;;
+    Linux)
+        while true; do # ifs in goto style;)
+        test "$ARCH" = 'unknown' && ARCH=`uname -m`
+        test -f /etc/debian_version && {
+            NAME="Debian"
+            VERSION=`cat /etc/debian_version`
+            break
+        }
+        test -f /etc/redhat-release && {
+            NAME=`head -1 /etc/redhat-release | sed -e "s/[ (]*[0-9].*//g" | sed -e "s/ release//g"`
+            VERSION=`head -1 /etc/redhat-release | sed -e "s/(.*)//g" | sed -e "s/[^0-9.]//g"`
+            break
+        }
+        test -f /etc/distro-release && {
+            NAME=`head -1 /etc/distro-release | sed -e "s/[ (]*[0-9].*//g"`
+            VERSION=`head -1 /etc/distro-release | sed -e "s/(.*)//g" | sed -e "s/[^0-9.]//g"`
+            break
+        }
+        test -f /etc/SuSE-release && {
+            NAME=`head -1 /etc/SuSE-release | sed -e "s/[ (]*[0-9].*//g"`
+            VERSION=`cat /etc/SuSE-release | grep -E "^VERSION|^PATCHLEVEL" | sed -e "s/[^0-9.]//g" | xargs printf "%d.%d"`
+            break
+        }
+        which lsb_release > /dev/null 2>&1 && {
+            NAME=`lsb_release -d | cut -f2 | sed -e "s/[ (]*[0-9].*//g"`
+            VERSION=`lsb_release -r | cut -f2`
+            break
+        } 
+        break
+        done
+
+        NAME=`echo "$NAME" | sed -e "s/SUSE Linux Enterprise Server.*/SLES/g"`
+        NAME=`echo "$NAME" | sed -e "s/Red Hat Enterprise Linux.*/RHEL/g"`
+        NAME=`echo "$NAME" | sed -e "s/CentOS.*/CentOS/g"`
+        NAME=`echo "$NAME" | sed -e "s/Debian.*/Debian/g"`
+        MODEL=" (unknown)"
+        grep "hypervisor" /proc/cpuinfo > /dev/null && MODEL=" (virtual)"
+        test -d /proc/xen && MODEL=" (Xen)"
+        grep "QEMU Virtual CPU" /proc/cpuinfo > /dev/null && MODEL=" (QEmu)"
+        cat /proc/1/environ 2>&1 | grep "container=lxc" > /dev/null && MODEL=" (lxc)"
+        which dmidecode > /dev/null 2>&1 && {
+            MODEL=""
+            dmidecode -t system 2> /dev/null | grep VMware > /dev/null && MODEL=" (VMWare)"
+            dmidecode -t system 2> /dev/null | grep "Microsoft Corporation" > /dev/null && MODEL=" (VirtualPC)"
+            dmidecode -t system 2> /dev/null | grep Parallels > /dev/null && MODEL=" (Parallels)"
+            dmidecode -t bios 2> /dev/null | grep QEMU > /dev/null && MODEL=" (QEmu)"
+        }
+        NUMCORES=`grep processor /proc/cpuinfo | wc -l`
+        MEMORY=$(( (`grep MemTotal /proc/meminfo | sed -e "s/[^0-9]*//g"` + 512*1024) / 1024 / 1024))
+        ;;
+    FreeBSD)
+        NAME="FreeBSD"
+        VERSION=`uname -r | sed -e "s/-RELEASE-p/./g"`
+        NUMCORES=`sysctl hw.ncpu | cut -c 10-`
+        MEMORY=$(( (`sysctl hw.physmem | sed -e "s/[^0-9]*//g"` + 512*1024*1024) / 1024/1024/1024))
+        sysctl hw.model | grep "QEMU" > /dev/null && MODEL=" (QEmu)"
+        ;;
+    SunOS)
+        NAME="SunOS"
+        VERSION=`uname -r`
+        test `zonename` = "global" || MODEL=" (zone)"
+        ;;
+esac
+
+
+echo "$NAME $VERSION/$ARCH$MODEL/$NUMCORES cpu cores/$MEMORY GB memory"
+
+# eof.
