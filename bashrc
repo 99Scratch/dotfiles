@@ -197,8 +197,8 @@ NC='\e[0m'              # No Color
 echo -e "${CYAN}This is BASH ${RED}${BASH_VERSION%.*}\
 ${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
 date
-fortunemod=`which fortune`
-cowthinkbin=`which cowthink`
+fortunemod=`which fortune 2>/dev/null`
+cowthinkbin=`which cowthink 2>/dev/null`
 if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
     $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
 fi
