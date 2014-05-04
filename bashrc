@@ -235,6 +235,7 @@ if [ -d ~/bin/ ]; then
   PATH=$PATH:$HOME/bin
 fi
 
+export EDITOR="vim"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
