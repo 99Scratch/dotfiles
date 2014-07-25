@@ -51,5 +51,6 @@ alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
 alias songbird='nightingale'
 alias thumbsdb-delete='find . -type f -name Thumbs.db -exec rm {} \;'
 alias xg='cd ~/opt/xg/; screen -S xdcc-grabscher mono XG.Application.exe'
+alias vi='vim'
 #alias whatthecommit='git commit -m "$(curl whatthecommit.com | grep \'^<p>\' | cut -d\'>\' -f2-)"'
 
