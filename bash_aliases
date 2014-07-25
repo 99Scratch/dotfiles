@@ -27,6 +27,7 @@ alias free='free -m'
 alias glances='glances -e'
 alias mkdir='mkdir -p'
 alias more='less'
+alias psc='ps xawf -eo pid,user,cgroup,args'
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 alias watch='watch -n 1'
 
