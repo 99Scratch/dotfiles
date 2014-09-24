@@ -14,15 +14,15 @@ general {
 
 #order += "ipv6"
 order += "disk /"
-order += "disk /home"
-order += "disk /home/strubbl/movies"
-order += "disk /home/strubbl/movies/serien"
-order += "disk /media/video"
+#order += "disk /home"
+#order += "disk /home/strubbl/movies"
+#order += "disk /home/strubbl/movies/serien"
+#order += "disk /media/video"
 order += "run_watch DHCP"
 #order += "run_watch VPN"
-#order += "wireless wlan0"
-order += "ethernet enp3s0"
-#order += "battery 0"
+order += "wireless wlp6s0"
+#order += "ethernet enp3s0"
+order += "battery 0"
 order += "cpu_usage"
 order += "load"
 #order += "cpu_temperature 0"
@@ -35,7 +35,7 @@ cpu_temperature 0 {
         path = "/sys/devices/platform/coretemp.0/temp1_input"
 }
 
-wireless wlan0 {
+wireless wlp6s0 {
         format_up = "W: (%quality at %essid) %ip"
         format_down = "W: down"
 }
