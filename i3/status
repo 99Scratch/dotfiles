@@ -17,7 +17,7 @@ order += "disk /"
 order += "disk /home"
 order += "disk /home/strubbl/movies"
 order += "disk /home/strubbl/movies/serien"
-order += "disk /media/video"
+order += "disk /home/strubbl/tmp"
 order += "run_watch DHCP"
 #order += "run_watch VPN"
 #order += "wireless wlan0"
@@ -25,7 +25,7 @@ order += "ethernet enp3s0"
 #order += "battery 0"
 order += "cpu_usage"
 order += "load"
-#order += "cpu_temperature 0"
+order += "cpu_temperature 0"
 order += "volume master"
 order += "tztime local"
 
@@ -93,7 +93,7 @@ disk "/home/strubbl/movies/serien" {
         format = "s %free"
 }
 
-disk "/media/video" {
-        format = "v %free"
+disk "/home/strubbl/tmp" {
+        format = "tmp %free"
 }
 
