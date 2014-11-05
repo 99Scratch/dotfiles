@@ -13,6 +13,7 @@
 	oneline = log --pretty=oneline
 	br = branch
 	ignored = ls-files --others -i --exclude-standard
+  check-whitespace = !git diff-tree --check $(git hash-object -t tree /dev/null) HEAD
 
 [core]
   editor = vim
