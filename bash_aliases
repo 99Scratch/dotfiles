@@ -51,6 +51,7 @@ alias packagelist='dpkg --get-selections | /bin/grep -v deinstall$ | /bin/grep i
 alias pg='ps waux | grep -i'
 alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
 alias songbird='nightingale'
+alias sublime='~/opt/Sublime\ Text\ 2/sublime_text'
 alias thumbsdb-delete='find . -type f -name Thumbs.db -exec rm {} \;'
 alias timmy='java -jar /opt/timmy/Timmy.jar'
 alias vm='sudo virt-manager'
