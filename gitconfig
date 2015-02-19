@@ -16,6 +16,7 @@
   check-whitespace = !git diff-tree --check $(git hash-object -t tree /dev/null) HEAD
 
 [core]
+  autocrlf = input
   editor = vim
 
 [push]
