@@ -239,6 +239,10 @@ if [ -d ~/bin/ ]; then
   PATH=$PATH:$HOME/bin
 fi
 
+if [ -d ~/opt/adt-bundle ]; then
+  export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools
+fi
+
 export EDITOR="vim"
 
 # Alias definitions.
