@@ -25,7 +25,7 @@ order += "ethernet enp0s10"
 order += "battery 0"
 order += "cpu_usage"
 order += "load"
-#order += "cpu_temperature 0"
+order += "cpu_temperature 0"
 order += "volume master"
 order += "tztime local"
 
@@ -51,7 +51,7 @@ battery 0 {
 }
 
 run_watch DHCP {
-        pidfile = "/var/run/dhcpcd*.pid"
+        pidfile = "/var/run/dhclient-*.pid"
 }
 
 run_watch VPN {
@@ -93,7 +93,7 @@ disk "/home/strubbl/movies/serien" {
         format = "s %free"
 }
 
-disk "/media/video" {
-        format = "v %free"
+disk "/home/strubbl/tmp" {
+        format = "tmp %free"
 }
 
