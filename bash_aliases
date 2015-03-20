@@ -33,7 +33,7 @@ alias watch='watch -n 1'
 
 # lazyness aliases
 alias abmelden='gnome-session-save --logout --gui'
-alias adb-restart='sudo adb kill-server; adb start-server'
+alias adb-restart='sudo adb kill-server; sudo adb start-server'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias android2path='export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools'
 alias banIp='iptables -A INPUT -j DROP -s'
