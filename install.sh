@@ -99,5 +99,11 @@ then
   then
     cp systemd/dunst.service ~/.config/systemd/user/
   fi
+
+  if [ -x /usr/bin/systemctl  ] && [ ! -f .config/systemd/user/default.target.wants/dunst.service ]
+  then
+    systemctl --user enable dunst.service
+    systemctl --user start dunst.service
+  fi
 fi
 
