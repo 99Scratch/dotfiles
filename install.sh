@@ -85,12 +85,19 @@ then
   cp mimeapps.list ~/.local/share/applications/mimeapps.list
 fi
 
+# dunst
 if [ -x /usr/bin/dunst ]
 then
   if [ ! -d ~/.config/dunst/ ]
   then
     mkdir -p ~/.config/dunst/
   fi
+
   cp dunstrc ~/.config/dunst/dunstrc
+
+  if [ -d ~/.config/systemd/user/ ]
+  then
+    cp systemd/dunst.service ~/.config/systemd/user/
+  fi
 fi
 
