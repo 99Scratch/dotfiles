@@ -203,7 +203,7 @@ if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
     $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
 fi
 # list screen sessions
-if which screen >/dev/null; then
+if which screen >/dev/null 2>&1; then
     screen -q -ls
     if [ $? -ge 10 ]; then
         screen -ls
