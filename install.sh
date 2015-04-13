@@ -1,6 +1,7 @@
 #!/bin/bash
 cp bashrc ~/.bashrc
 cp bash_aliases ~/.bash_aliases
+cp bash_profile ~/.bash_profile
 cp -r bin ~
 cp gitconfig  ~/.gitconfig
 cp screenrc ~/.screenrc
