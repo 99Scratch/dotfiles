@@ -108,3 +108,11 @@ then
   fi
 fi
 
+if [ ! -d $HOME/.config/git/ ]
+then
+  mkdir -p $HOME/.config/git/
+fi
+if [ -d $HOME/.config/git/ ]
+then
+  cp gitignore $HOME/.config/git/ignore
+fi
