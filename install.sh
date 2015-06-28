@@ -68,18 +68,6 @@ cp $VERBOSE_FLAG Xmodmap ~/.Xmodmap
 git submodule init
 git submodule update
 
-# git-flow installation
-if [ ! -x /usr/local/bin/git-flow ]
-then
-	wget --no-check-certificate -q -O - https://github.com/nvie/gitflow/raw/develop/contrib/gitflow-installer.sh | sudo bash
-fi
-
-# git-flow-completion
-if [ -x /usr/local/bin/git-flow ]
-then
-  cp $VERBOSE_FLAG gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
-fi
-
 # initialiaze gibo
 cp $VERBOSE_FLAG gibo/gibo ~/bin/
 cp $VERBOSE_FLAG gibo/gibo-completion.bash ~/.bash_completion.d/
