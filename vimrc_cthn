@@ -1,0 +1,10 @@
+" . wiederholt letzten Befehl
+" strg+w w fenster wechseln, v .. vertical, s .. split/horizontal, c .. close,schließen, h,j,k,l entsprechendes fenster springen
+" vim -p datei1 datei2 <-- Tabs
+" t $c .. move to char $c
+" visual block markieren, dann < und > um einzurücken
+" * sucht gleiches Wort, wo Cursor gerade ist
+" fenster in vim = buffer befehl :bn/:bp buffer next/previous
+" Zeichen an aktueller Cursorposition ändern: r und dann das neue Zeichen
+" Plugin: vundle, wiked, ctrlp, powerline, matchit
+

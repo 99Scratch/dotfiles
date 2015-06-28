@@ -3,9 +3,7 @@
 	email = sven.fischer@sund-xplosion.de
 
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+  ui = true
 
 [alias]
 	co = checkout
@@ -15,7 +13,11 @@
 	oneline = log --pretty=oneline
 	br = branch
 	ignored = ls-files --others -i --exclude-standard
+  check-whitespace = !git diff-tree --check $(git hash-object -t tree /dev/null) HEAD
 
 [core]
-        editor = vim
+  autocrlf = input
+  editor = vim
 
+[push]
+  default = matching

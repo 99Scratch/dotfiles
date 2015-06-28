@@ -5,6 +5,13 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
@@ -53,7 +60,13 @@ fi
 if [ "$color_prompt" = yes ]; then
 #    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     if [ $(whoami) != "root" ] ; then
-      PS1='${debian_chroot:+($debian_chroot)}\[\033[1;36m\]\u\[\033[1;32m\]@\[\033[1;33m\]\h\[\033[32m\]:\w\[\033[0;35m\]$(__git_ps1 "[%s]")\[\033[00m\]\$ '
+      PS1='${debian_chroot:+($debian_chroot)}\[\033[1;36m\]\u\[\033[1;32m\]@\[\033[1;33m\]\h\[\033[32m\]:\w\[\033[0;35m\]\[\033[00m\]\$ '
+      if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+        . /usr/share/git/completion/git-prompt.sh
+      fi
+      if type __git_ps1 >/dev/null 2>&1; then
+        PS1='${debian_chroot:+($debian_chroot)}\[\033[1;36m\]\u\[\033[1;32m\]@\[\033[1;33m\]\h\[\033[32m\]:\w\[\033[0;35m\]$(__git_ps1 "[%s]")\[\033[00m\]\$ '
+      fi
     else
       # root prompt
       PS1='${debian_chroot:+($debian_chroot)}\[\033[1;31m\]\u\[\033[1;32m\]@\[\033[1;33m\]\h\[\033[32m\]:\w\[\033[00m\]\$ '
@@ -112,26 +125,40 @@ function swap()  # Swap 2 filenames around, if they exist
     mv $TMPFILE "$2"
 }
 
-function extract()      # Handy Extract Program.
-{
-     if [ -f $1 ] ; then
-         case $1 in
-             *.tar.bz2)   tar xvjf $1     ;;
-             *.tar.gz)    tar xvzf $1     ;;
-             *.bz2)       bunzip2 $1      ;;
-             *.rar)       unrar x $1      ;;
-             *.gz)        gunzip $1       ;;
-             *.tar)       tar xvf $1      ;;
-             *.tbz2)      tar xvjf $1     ;;
-             *.tgz)       tar xvzf $1     ;;
-             *.zip)       unzip $1        ;;
-             *.Z)         uncompress $1   ;;
-             *.7z)        7z x $1         ;;
-             *)           echo "'$1' cannot be extracted via >extract<" ;;
-         esac
-     else
-         echo "'$1' is not a valid (known) archive file"
-     fi
+extract() {
+    local c e i
+
+    (($#)) || return
+
+    for i; do
+        c=''
+        e=1
+
+        if [[ ! -r $i ]]; then
+            echo "$0: file is unreadable: \`$i'" >&2
+            continue
+        fi
+
+        case $i in
+            *.t@(gz|lz|xz|b@(2|z?(2))|a@(z|r?(.@(Z|bz?(2)|gz|lzma|xz)))))
+                   c='bsdtar xvf';;
+            *.7z)  c='7z x';;
+            *.Z)   c='uncompress';;
+            *.bz2) c='bunzip2';;
+            *.exe) c='cabextract';;
+            *.gz)  c='gunzip';;
+            *.rar) c='unrar x';;
+            *.xz)  c='unxz';;
+            *.zip) c='unzip';;
+            *)     echo "$0: unrecognized file extension: \`$i'" >&2
+                   continue;;
+        esac
+
+        command $c "$i"
+        e=$?
+    done
+
+    return $e
 }
 
 
@@ -170,9 +197,19 @@ NC='\e[0m'              # No Color
 echo -e "${CYAN}This is BASH ${RED}${BASH_VERSION%.*}\
 ${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
 date
-if [ -x /usr/games/fortune ]; then
-    /usr/games/fortune -s | /usr/games/cowthink    # Makes our day a bit more fun.... :-)
+fortunemod=`which fortune 2>/dev/null`
+cowthinkbin=`which cowthink 2>/dev/null`
+if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
+    $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
 fi
+# list screen sessions
+if which screen >/dev/null 2>&1; then
+    screen -q -ls
+    if [ $? -ge 10 ]; then
+        screen -ls
+    fi
+fi
+
 
 function _exit()        # Function to run upon exit of shell.
 {
@@ -202,7 +239,19 @@ function apt-history(){
       esac
 }
 
+random_mac() {
+  printf '%02x' $((0x$(od /dev/urandom -N1 -t x1 -An | cut -c 2-) & 0xFE | 0x02)); od /dev/urandom -N5 -t x1 -An | sed 's/ /:/g'
+}
 
+if [ -d ~/bin/ ]; then
+  PATH=$PATH:$HOME/bin
+fi
+
+if [ -d ~/opt/adt-bundle ]; then
+  export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools
+fi
+
+export EDITOR="vim"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -217,12 +266,13 @@ if [ -f ~/.bash_aliases_more ]; then
     . ~/.bash_aliases_more
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
+if [ -f ~/bin/sbm.sh ]; then
+    . ~/bin/sbm.sh
 fi
 
-source ~/.bash_completion.d/git-flow-completion.bash
+if [ -d ~/.bash_completion.d ]; then
+  for baco in ~/.bash_completion.d/*.bash ; do
+    . $baco
+  done
+fi
 

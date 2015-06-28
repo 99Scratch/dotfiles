@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in *.JPG
+do
+  convert -resize 800 -quality 80 "$i" "$i"
+done
