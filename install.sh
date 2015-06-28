@@ -1,6 +1,7 @@
 #!/bin/bash
 
-VERBOSE_FLAG="-v" # for debug purpose set to -v
+VERBOSE_FLAG="" # for debug purpose set to -v
+#VERBOSE_FLAG="-v" # for debug purpose set to -v
 
 cp $VERBOSE_FLAG bashrc ~/.bashrc
 cp $VERBOSE_FLAG bash_aliases ~/.bash_aliases
