@@ -202,6 +202,14 @@ cowthinkbin=`which cowthink 2>/dev/null`
 if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
     $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
 fi
+# list screen sessions
+if which screen >/dev/null 2>&1; then
+    screen -q -ls
+    if [ $? -ge 10 ]; then
+        screen -ls
+    fi
+fi
+
 
 function _exit()        # Function to run upon exit of shell.
 {
@@ -231,8 +239,16 @@ function apt-history(){
       esac
 }
 
+random_mac() {
+  printf '%02x' $((0x$(od /dev/urandom -N1 -t x1 -An | cut -c 2-) & 0xFE | 0x02)); od /dev/urandom -N5 -t x1 -An | sed 's/ /:/g'
+}
+
 if [ -d ~/bin/ ]; then
   PATH=$PATH:$HOME/bin
+fi
+
+if [ -d ~/opt/adt-bundle ]; then
+  export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools
 fi
 
 export EDITOR="vim"
