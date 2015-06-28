@@ -79,7 +79,7 @@ cp gibo/gibo-completion.bash ~/.bash_completion.d/
 ~/bin/gibo -u
 
 # vundle initialisation
-vim +BundleInstall +qall
+vim +PluginInstall +qall
 
 if [ -d ~/.local/share/applications/ ]
 then
@@ -108,6 +108,7 @@ then
   fi
 fi
 
+# global gitignore
 if [ ! -d $HOME/.config/git/ ]
 then
   mkdir -p $HOME/.config/git/
