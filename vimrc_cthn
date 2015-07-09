@@ -1,8 +1,3 @@
-" http://benjamin-schweizer.de/files/temp/profile.tar.gz
-" wacom tablet
-" surfpad
-" eink reader touch 622
-" http://bit.ly/q1QMPU
 " . wiederholt letzten Befehl
 " strg+w w fenster wechseln, v .. vertical, s .. split/horizontal, c .. close,schließen, h,j,k,l entsprechendes fenster springen
 " vim -p datei1 datei2 <-- Tabs

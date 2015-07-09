@@ -202,6 +202,14 @@ cowthinkbin=`which cowthink 2>/dev/null`
 if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
     $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
 fi
+# list screen sessions
+if which screen >/dev/null 2>&1; then
+    screen -q -ls
+    if [ $? -ge 10 ]; then
+        screen -ls
+    fi
+fi
+
 
 function _exit()        # Function to run upon exit of shell.
 {
