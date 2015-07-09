@@ -3,6 +3,10 @@
 VERBOSE_FLAG="" # for debug purpose set to -v
 #VERBOSE_FLAG="-v" # for debug purpose set to -v
 
+# git submodules
+git submodule init
+git submodule update
+
 cp $VERBOSE_FLAG bashrc ~/.bashrc
 cp $VERBOSE_FLAG bash_aliases ~/.bash_aliases
 cp $VERBOSE_FLAG bash_profile ~/.bash_profile
@@ -63,10 +67,6 @@ fi
 
 # no capslock pls
 cp $VERBOSE_FLAG Xmodmap ~/.Xmodmap
-
-# git submodules
-git submodule init
-git submodule update
 
 # initialiaze gibo
 cp $VERBOSE_FLAG gibo/gibo ~/bin/
