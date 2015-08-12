@@ -1,3 +1,46 @@
+" ############
+" ## VUNDLE ##
+" ############
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" my plugins
+Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'elzr/vim-json'
+Plugin 'PotatoesMaster/i3-vim-syntax'
+Plugin 'git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git'
+" my plugins end
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+" ############
+" ## vimrc ##
+" ###########
+
 set background=dark
 " 256 colors color schemes
 let &t_Co=256
@@ -72,31 +115,7 @@ set number
 autocmd BufEnter *.{c,cpp,h} setl cindent
 autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automatisch um
 
-" ############
-" ## VUNDLE ##
-" ############
-set nocompatible
-filetype off " required for vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" let Vundle manage Vundle
-" required! 
-" original repos on github
-Bundle 'gmarik/vundle'
-Bundle 'othree/html5.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'elzr/vim-json'
-Bundle 'PotatoesMaster/i3-vim-syntax'
-Bundle 'git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git'
-
-filetype plugin indent on " required for vundle
-
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" lets you use w!! to do that after you opened the file already, which you
+" wanted to edit with root privileges
+cmap w!! w !sudo tee % >/dev/null
 

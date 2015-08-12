@@ -1,11 +1,21 @@
 #!/bin/bash
-cp bashrc ~/.bashrc
-cp bash_aliases ~/.bash_aliases
-cp -r bin ~
-cp gitconfig  ~/.gitconfig
-cp screenrc ~/.screenrc
-cp vimrc ~/.vimrc
 
+VERBOSE_FLAG="" # for debug purpose set to -v
+#VERBOSE_FLAG="-v" # for debug purpose set to -v
+
+# git submodules
+git submodule init
+git submodule update
+
+cp $VERBOSE_FLAG bashrc ~/.bashrc
+cp $VERBOSE_FLAG bash_aliases ~/.bash_aliases
+cp $VERBOSE_FLAG bash_profile ~/.bash_profile
+cp $VERBOSE_FLAG -r bin ~
+cp $VERBOSE_FLAG gitconfig  ~/.gitconfig
+cp $VERBOSE_FLAG screenrc ~/.screenrc
+cp $VERBOSE_FLAG vimrc ~/.vimrc
+
+# VIM
 # clean up personal vim dir
 if [ -d ~/.vim ]
 then
@@ -13,14 +23,17 @@ then
 fi
 # vim plugins
 mkdir ~/.vim
-cp -r vim/* ~/.vim/
+cp $VERBOSE_FLAG -r vim/* ~/.vim/
+# vundle initialisation
+vim +PluginInstall +qall
+
 
 # i3
 if [ -d ~/.i3 ]
 then
   rm -rf ~/.i3
 fi
-cp -r i3 ~/.i3
+cp $VERBOSE_FLAG -r i3 ~/.i3
 
 # bash-completion
 if [ ! -d ~/.bash_completion.d ]
@@ -34,54 +47,65 @@ then
 	if [ ! -f /usr/share/scite/locale.properties ] 
 	then
 		echo "copying german locale for scite"
-		sudo cp locale.de.properties /usr/share/scite/locale.properties
+		sudo cp $VERBOSE_FLAG locale.de.properties /usr/share/scite/locale.properties
 	fi
-  cp SciTEUser.properties ~/.SciTEUser.properties
+  cp $VERBOSE_FLAG SciTEUser.properties ~/.SciTEUser.properties
 fi
 
 # radiotray
 if [ -x /usr/bin/radiotray ]
 then
 	radiotraydir="$HOME/.local/share/radiotray/"
-	echo "copying radio tray config and senders"
 	if [ ! -d $radiotraydir ]
 	then
 		mkdir -p $radiotraydir
 		echo $?
 	fi
-	cp radiotray/config.xml $radiotraydir
-	cp radiotray/bookmarks.xml $radiotraydir
+	cp $VERBOSE_FLAG radiotray/config.xml $radiotraydir
+	cp $VERBOSE_FLAG radiotray/bookmarks.xml $radiotraydir
 fi
 
 # no capslock pls
-cp Xmodmap ~/.Xmodmap
-
-# git submodules
-git submodule init
-git submodule update
-
-# git-flow installation
-if [ ! -x /usr/local/bin/git-flow ]
-then
-	wget --no-check-certificate -q -O - https://github.com/nvie/gitflow/raw/develop/contrib/gitflow-installer.sh | sudo bash
-fi
-
-# git-flow-completion
-if [ -x /usr/local/bin/git-flow ]
-then
-  cp gitflowcompletion/git-flow-completion.bash ~/.bash_completion.d/
-fi
+cp $VERBOSE_FLAG Xmodmap ~/.Xmodmap
 
 # initialiaze gibo
-cp gibo/gibo ~/bin/
-cp gibo/gibo-completion.bash ~/.bash_completion.d/
+cp $VERBOSE_FLAG gibo/gibo ~/bin/
+cp $VERBOSE_FLAG gibo/gibo-completion.bash ~/.bash_completion.d/
 ~/bin/gibo -u
 
-# vundle initialisation
-vim +BundleInstall +qall
-
-if [ ! -d ~/.local/share/applications/ ]
+if [ -d ~/.local/share/applications/ ]
 then
-  cp mimeapps.list ~/.local/share/applications/mimeapps.list
+  cp $VERBOSE_FLAG mimeapps.list ~/.local/share/applications/mimeapps.list
 fi
 
+# dunst
+if [ -x /usr/bin/dunst ]
+then
+  if [ ! -d ~/.config/dunst/ ]
+  then
+    mkdir -p ~/.config/dunst/
+  fi
+
+  cp $VERBOSE_FLAG dunstrc ~/.config/dunst/dunstrc
+
+  if [ -d ~/.config/systemd/user/ ]
+  then
+    cp $VERBOSE_FLAG systemd/dunst.service ~/.config/systemd/user/
+  fi
+
+  if [ -x /usr/bin/systemctl  ] && [ ! -f .config/systemd/user/default.target.wants/dunst.service ]
+  then
+    systemctl --user enable dunst.service
+    systemctl --user start dunst.service
+  fi
+fi
+
+# global gitignore
+if [ ! -d $HOME/.config/git/ ]
+then
+  mkdir -p $HOME/.config/git/
+fi
+if [ -d $HOME/.config/git/ ]
+then
+  cp $VERBOSE_FLAG gitignore $HOME/.config/git/ignore
+fi

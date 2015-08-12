@@ -197,11 +197,19 @@ NC='\e[0m'              # No Color
 echo -e "${CYAN}This is BASH ${RED}${BASH_VERSION%.*}\
 ${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
 date
-fortunemod=`which fortune`
-cowthinkbin=`which cowthink`
+fortunemod=`which fortune 2>/dev/null`
+cowthinkbin=`which cowthink 2>/dev/null`
 if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
     $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
 fi
+# list screen sessions
+if which screen >/dev/null 2>&1; then
+    screen -q -ls
+    if [ $? -ge 10 ]; then
+        screen -ls
+    fi
+fi
+
 
 function _exit()        # Function to run upon exit of shell.
 {
@@ -231,10 +239,24 @@ function apt-history(){
       esac
 }
 
+random_mac() {
+  printf '%02x' $((0x$(od /dev/urandom -N1 -t x1 -An | cut -c 2-) & 0xFE | 0x02)); od /dev/urandom -N5 -t x1 -An | sed 's/ /:/g'
+}
+
 if [ -d ~/bin/ ]; then
   PATH=$PATH:$HOME/bin
 fi
 
+if [ -d ~/go ]; then
+  GOPATH=~/go
+  PATH=$PATH:$HOME/go/bin
+fi
+
+if [ -d ~/opt/adt-bundle ]; then
+  export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools
+fi
+
+export EDITOR="vim"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

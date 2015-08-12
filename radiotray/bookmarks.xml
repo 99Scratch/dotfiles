@@ -139,7 +139,7 @@
 			<bookmark name="NDR 1 Niedersachsen" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1niedersachsen_hi_mp3"/>
 			<bookmark name="NDR 1 Radio MV" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1radiomv_hi_mp3"/>
 			<bookmark name="NDR 903" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr903_hi_mp3"/>
-			<bookmark name="NDR  Welle Nord" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1wellenord_hi_mp3"/>
+			<bookmark name="NDR	Welle Nord" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndr1wellenord_hi_mp3"/>
 			<bookmark name="NDR Kultur" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndrkultur_hi_mp3"/>
 			<bookmark name="NDR Info" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndrinfo_hi_mp3"/>
 			<bookmark name="NDR Info Spezial" url="http://ndrstream.ic.llnwd.net/stream/ndrstream_ndrinfo_spezial_hi_mp3"/>
@@ -257,6 +257,7 @@
 		<bookmark name="egoFM" url="http://www.egofm.de/stream/192kb"/>
 		<bookmark name="ffn Niedersachsen" url="http://player.ffn.de/tunein_ffn.pls"/>
 		<bookmark name="fishmixx" url="http://stream.fishmixx.de:8000/fishmixx.ogg.m3u"/>
+		<bookmark name="FluxFM Bremen/Stuttgart 97.2 (Indie)" url="http://opml.radiotime.com/Tune.ashx?id=s86460"/>
 		<bookmark name="Funkhaus Europa" url="http://www.wdr.de/wdrlive/media/fhe.m3u"/>
 		<bookmark name="Foxwahn Radio" url="http://89.149.226.225:8100"/>
 		<bookmark name="GrooveFM" url="http://stream.groovefm.de:10028"/>
@@ -443,19 +444,19 @@
 		<bookmark name="mp3-192" url="http://streams.frequence3.net/mp3-192.m3u"/>
 		<bookmark name="ogg-112" url="http://streams.frequence3.net/ogg-112.m3u"/>
 		<bookmark name="mp3-192" url="http://streams.frequence3.net/mp3-192.ram"/>
-		<bookmark name="encodernrj       # NRJ " url="mms://vipnrj.yacast.net/encodernrj"/>
-		<bookmark name="nrj_webradio01   # NRJ Hits" url="mms://vipnrj.yacast.net/nrj_webradio01"/>
-		<bookmark name="nrj_webradio02   # NRJ Groove" url="mms://vipnrj.yacast.net/nrj_webradio02"/>
-		<bookmark name="nrj_webradio03   # NRJ Pop Rock" url="mms://vipnrj.yacast.net/nrj_webradio03"/>
-		<bookmark name="nrj_webradio04   # NRJ Dance" url="mms://vipnrj.yacast.net/nrj_webradio04"/>
-		<bookmark name="nrj_webradio07   # NRJ Music Awards" url="mms://vipnrj.yacast.net/nrj_webradio07"/>
-		<bookmark name="nrj_webradio08   # NRJ ClÃ©opÃ¢tre" url="mms://vipnrj.yacast.net/nrj_webradio08"/>
-		<bookmark name="nrj_webradio09   # NRJ Quentin Tarantino" url="mms://vipnrj.yacast.net/nrj_webradio09"/>
-		<bookmark name="nrj_webradio10   # NRJ Music Tour" url="mms://vipnrj.yacast.net/nrj_webradio10"/>
-		<bookmark name="nrj_webradio11   # NRJ Electro" url="mms://vipnrj.yacast.net/nrj_webradio11"/>
-		<bookmark name="nrj_webradio12   # NRJ Tech" url="mms://vipnrj.yacast.net/nrj_webradio12"/>
-		<bookmark name="nrj_webradio13   # NRJ All French" url="mms://vipnrj.yacast.net/nrj_webradio13"/>
-		<bookmark name="nrj_webradio14   # NRJ NouveautÃ©s" url="mms://vipnrj.yacast.net/nrj_webradio14"/>
+		<bookmark name="encodernrj			 # NRJ " url="mms://vipnrj.yacast.net/encodernrj"/>
+		<bookmark name="nrj_webradio01	 # NRJ Hits" url="mms://vipnrj.yacast.net/nrj_webradio01"/>
+		<bookmark name="nrj_webradio02	 # NRJ Groove" url="mms://vipnrj.yacast.net/nrj_webradio02"/>
+		<bookmark name="nrj_webradio03	 # NRJ Pop Rock" url="mms://vipnrj.yacast.net/nrj_webradio03"/>
+		<bookmark name="nrj_webradio04	 # NRJ Dance" url="mms://vipnrj.yacast.net/nrj_webradio04"/>
+		<bookmark name="nrj_webradio07	 # NRJ Music Awards" url="mms://vipnrj.yacast.net/nrj_webradio07"/>
+		<bookmark name="nrj_webradio08	 # NRJ ClÃ©opÃ¢tre" url="mms://vipnrj.yacast.net/nrj_webradio08"/>
+		<bookmark name="nrj_webradio09	 # NRJ Quentin Tarantino" url="mms://vipnrj.yacast.net/nrj_webradio09"/>
+		<bookmark name="nrj_webradio10	 # NRJ Music Tour" url="mms://vipnrj.yacast.net/nrj_webradio10"/>
+		<bookmark name="nrj_webradio11	 # NRJ Electro" url="mms://vipnrj.yacast.net/nrj_webradio11"/>
+		<bookmark name="nrj_webradio12	 # NRJ Tech" url="mms://vipnrj.yacast.net/nrj_webradio12"/>
+		<bookmark name="nrj_webradio13	 # NRJ All French" url="mms://vipnrj.yacast.net/nrj_webradio13"/>
+		<bookmark name="nrj_webradio14	 # NRJ NouveautÃ©s" url="mms://vipnrj.yacast.net/nrj_webradio14"/>
 		<bookmark name="stream.pulsradio" url="http://stream.pulsradio.com:5000"/>
 	</group>
 	<group name="Austria">
@@ -472,7 +473,7 @@
 		<bookmark name="kronehit-vollgas" url="http://onair.krone.at/kronehit-vollgas.mp3"/>
 		<bookmark name="kronehit-yam" url="http://onair.krone.at/kronehit-yam.mp3"/>
 		<bookmark name="kronehit-fanradio" url="http://onair.krone.at/kronehit-fanradio.mp3"/>
-		<bookmark name="kronehit-classics.mp3  # Classics. Teils auch als Jukebox anmoderiert" url="http://onair.krone.at/kronehit-classics.mp3"/>
+		<bookmark name="kronehit-classics.mp3	# Classics. Teils auch als Jukebox anmoderiert" url="http://onair.krone.at/kronehit-classics.mp3"/>
 		<bookmark name="kronehit-relax" url="http://onair.krone.at/kronehit-relax.mp3 "/>
 		<bookmark name="mp3stream3.apasf.apa" url="http://mp3stream3.apasf.apa.at:8000"/>
 		<bookmark name="mp3stream6.apasf.apa" url="http://mp3stream6.apasf.apa.at:8000"/>

@@ -167,12 +167,14 @@ bar {
         status_command i3status --config ~/.i3/status
 }
 
+for_window [title="0 A.D."] floating enable
 for_window [title="Audacious"] floating enable
 for_window [title="galculator"] floating enable
 for_window [title="Java"] floating enable
 for_window [class="net-minecraft-LauncherFrame"] floating enable
 for_window [class="Pidgin"] floating enable
 for_window [class="psi"] floating enable
+for_window [title="Schreibtisch"] floating disable
 for_window [title="TrueCrypt"] floating enable
 for_window [title="UNetbootin"] floating enable
 for_window [class="VirtualBox"] floating enable

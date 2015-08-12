@@ -17,10 +17,11 @@ order += "disk /"
 order += "disk /home"
 order += "disk /home/strubbl/movies"
 order += "disk /home/strubbl/movies/serien"
+order += "disk /home/strubbl/tmp"
 order += "run_watch DHCP"
 #order += "run_watch VPN"
 #order += "wireless wlan0"
-order += "ethernet enp2s0"
+order += "ethernet enp3s0"
 #order += "battery 0"
 order += "cpu_usage"
 order += "load"
@@ -30,8 +31,8 @@ order += "tztime local"
 
 cpu_temperature 0 {
         format = "T: %degrees °C"
-        max_threshold = 65
-        path = "/sys/devices/platform/coretemp.0/temp1_input"
+        max_threshold = 60
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
 }
 
 wireless wlan0 {
@@ -39,7 +40,7 @@ wireless wlan0 {
         format_down = "W: down"
 }
 
-ethernet enp2s0 {
+ethernet enp3s0 {
         # if you use %speed, i3status requires root privileges
         format_up = "E: %ip (%speed)"
         format_down = "E: down"
@@ -50,7 +51,7 @@ battery 0 {
 }
 
 run_watch DHCP {
-        pidfile = "/var/run/dhcpcd*.pid"
+        pidfile = "/var/run/dhclient-*.pid"
 }
 
 run_watch VPN {
@@ -90,5 +91,9 @@ disk "/home/strubbl/movies" {
 
 disk "/home/strubbl/movies/serien" {
         format = "s %free"
+}
+
+disk "/home/strubbl/tmp" {
+        format = "tmp %free"
 }
 

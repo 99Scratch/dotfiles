@@ -1,0 +1,10 @@
+# multiple connections
+ControlMaster auto
+ControlPath /tmp/ssh_mux_%h_%p_%r
+# persistent connections for repeated connections, requires >=OpenSSH 5.6
+ControlPersist 4h
+# ignore short network outages
+TCPKeepAlive no
+ServerAliveInterval 60
+ServerAliveCountMax 10
+
