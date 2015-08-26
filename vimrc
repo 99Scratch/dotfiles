@@ -114,6 +114,9 @@ set number
 
 autocmd BufEnter *.{c,cpp,h} setl cindent
 autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automatisch um
+"This is for setting Makefiles with tabs not spaces
+autocmd FileType make setlocal noexpandtab
+autocmd BufEnter *.make setlocal noexpandtab
 
 " lets you use w!! to do that after you opened the file already, which you
 " wanted to edit with root privileges
