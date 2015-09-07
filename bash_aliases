@@ -54,6 +54,7 @@ alias packageinstall='sudo aptitude install $(cat full.package.list-$(/bin/uname
 alias packagelist='dpkg --get-selections | /bin/grep -v deinstall$ | /bin/grep install$ | /usr/bin/awk '"'"'{print $1}'"'"' > full.package.list-$(/bin/uname -n)'
 alias pg='ps waux | grep -i'
 alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
+alias remove-untagged-docker-images='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 alias songbird='nightingale'
 alias studio='~/opt/android-studio/bin/studio.sh'
 alias sublime='~/opt/Sublime\ Text\ 2/sublime_text'
