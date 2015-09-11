@@ -109,3 +109,12 @@ if [ -d $HOME/.config/git/ ]
 then
   cp $VERBOSE_FLAG gitignore $HOME/.config/git/ignore
 fi
+
+# zsh
+if [ -d $HOME/.oh-my-zsh ]
+then
+  rm -rf $HOME/.oh-my-zsh
+fi
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp zshrc ~/.zshrc
+
