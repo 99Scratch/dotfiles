@@ -51,6 +51,7 @@ battery 0 {
         status_chr = "⚡"
         status_bat = "⌛"
         status_full = "☢"
+        format_down = "no battery"
         last_full_capacity = true
         threshold_type = time
         low_threshold = 30
@@ -58,10 +59,12 @@ battery 0 {
 
 run_watch DHCP {
         pidfile = "/var/run/dhclient-*.pid"
+        format = "%title"
 }
 
 run_watch VPN {
         pidfile = "/var/run/vpnc/pid"
+        format = "%title"
 }
 
 tztime local {
@@ -85,21 +88,26 @@ volume master {
 
 disk "/" {
         format = "/ %free"
+        low_threshold = 10
 }
 
 disk "/home" {
         format = "~ %free"
+        low_threshold = 10
 }
 
 disk "/home/strubbl/movies" {
         format = "m %free"
+        low_threshold = 10
 }
 
 disk "/home/strubbl/movies/serien" {
         format = "s %free"
+        low_threshold = 10
 }
 
 disk "/home/strubbl/tmp" {
         format = "tmp %free"
+        low_threshold = 10
 }
 
