@@ -117,4 +117,5 @@ then
 fi
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp zshrc ~/.zshrc
+cp bullet-train-oh-my-zsh-theme/bullet-train.zsh-theme ~/.oh-my-zsh/themes/
 
