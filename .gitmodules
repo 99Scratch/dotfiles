@@ -6,4 +6,4 @@
 	url = https://github.com/simonwhitaker/gibo.git
 [submodule "bullet-train-oh-my-zsh-theme"]
 	path = bullet-train-oh-my-zsh-theme
-	url = https://github.com/Strubbl/bullet-train-oh-my-zsh-theme.git
+	url = https://github.com/caiogondim/bullet-train-oh-my-zsh-theme.git

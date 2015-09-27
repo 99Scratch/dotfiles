@@ -15,6 +15,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bullet-train"
 BULLETTRAIN_TIME_SHOW=false
 BULLETTRAIN_CONTEXT_SHOW=true
+BULLETTRAIN_PROMPT_SEPARATE_LINE=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
