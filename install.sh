@@ -8,7 +8,7 @@ git submodule init
 git submodule update
 
 cp $VERBOSE_FLAG bashrc ~/.bashrc
-cp $VERBOSE_FLAG bash_aliases ~/.bash_aliases
+cp $VERBOSE_FLAG aliases ~/.aliases
 cp $VERBOSE_FLAG bash_profile ~/.bash_profile
 cp $VERBOSE_FLAG -r bin ~
 cp $VERBOSE_FLAG gitconfig  ~/.gitconfig
