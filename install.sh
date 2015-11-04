@@ -11,9 +11,13 @@ cp $VERBOSE_FLAG bashrc ~/.bashrc
 cp $VERBOSE_FLAG aliases ~/.aliases
 cp $VERBOSE_FLAG bash_profile ~/.bash_profile
 cp $VERBOSE_FLAG -r bin ~
-cp $VERBOSE_FLAG gitconfig  ~/.gitconfig
 cp $VERBOSE_FLAG screenrc ~/.screenrc
 cp $VERBOSE_FLAG vimrc ~/.vimrc
+
+if [ ! -f ~/.gitconfig ]
+then
+  cp $VERBOSE_FLAG gitconfig  ~/.gitconfig
+fi
 
 # VIM
 # clean up personal vim dir
@@ -115,7 +119,7 @@ if [ -d $HOME/.oh-my-zsh ]
 then
   rm -rf $HOME/.oh-my-zsh
 fi
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp zshrc ~/.zshrc
 cp bullet-train-oh-my-zsh-theme/bullet-train.zsh-theme ~/.oh-my-zsh/themes/
 
