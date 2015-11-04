@@ -297,8 +297,6 @@ if [ -d ~/.bash_completion.d ]; then
   done
 fi
 
-source ~/.bash_completion.d/git-flow-completion.bash
-
 export http_proxy=10.0.2.2:3128
 export https_proxy=10.0.2.2:3128
 export ftp_proxy=10.0.2.2:3128
