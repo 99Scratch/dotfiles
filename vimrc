@@ -20,6 +20,7 @@ Plugin 'elzr/vim-json'
 Plugin 'PotatoesMaster/i3-vim-syntax'
 Plugin 'git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git'
 Plugin 'bogado/file-line'
+Plugin 'nvie/vim-flake8'
 " my plugins end
 
 " All of your Plugins must be added before the following line
