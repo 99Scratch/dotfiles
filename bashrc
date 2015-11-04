@@ -299,9 +299,9 @@ fi
 
 source ~/.bash_completion.d/git-flow-completion.bash
 
-export http_proxy=127.0.0.1:3128
-export https_proxy=127.0.0.1:3128
-export ftp_proxy=127.0.0.1:3128
+export http_proxy=10.0.2.2:3128
+export https_proxy=10.0.2.2:3128
+export ftp_proxy=10.0.2.2:3128
 export HTTP_PROXY=$http_proxy
 export HTTPS_PROXY=$https_proxy
 export FTP_PROXY=$ftp_proxy
