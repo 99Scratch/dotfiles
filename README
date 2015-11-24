@@ -1,2 +1,2 @@
-requires xtitle cowsay cowthink fortune-mod
+requires xtitle cowsay cowthink fortune-mod python-flake8
 
