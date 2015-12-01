@@ -31,7 +31,7 @@ order += "tztime local"
 
 cpu_temperature 0 {
         format = "╽ %degrees °C"
-        max_threshold = 60
+        max_threshold = 80
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
 }
 
