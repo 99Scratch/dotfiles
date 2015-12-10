@@ -264,7 +264,7 @@ if [ -d ~/bin/ ]; then
 fi
 
 if [ -d ~/go ]; then
-  GOPATH=~/go
+  export GOPATH=~/go
   PATH=$PATH:$HOME/go/bin
 fi
 
