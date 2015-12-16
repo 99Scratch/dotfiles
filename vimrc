@@ -16,11 +16,14 @@ Plugin 'gmarik/Vundle.vim'
 " my plugins
 Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'gregsexton/gitv'
 Plugin 'elzr/vim-json'
 Plugin 'PotatoesMaster/i3-vim-syntax'
 Plugin 'git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git'
 Plugin 'bogado/file-line'
 Plugin 'nvie/vim-flake8'
+Plugin 'fatih/vim-go'
+Plugin 'jiangmiao/auto-pairs'
 " my plugins end
 
 " All of your Plugins must be added before the following line
