@@ -265,6 +265,7 @@ fi
 
 if [ -d ~/go ]; then
   GOPATH=~/go
+  GOROOT=/usr/lib/go
   PATH=$PATH:$HOME/go/bin
 fi
 
