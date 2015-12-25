@@ -89,7 +89,8 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 if [ -d ~/go ]; then
-  export GOPATH=~/go
+  GOPATH=~/go
+  GOROOT=/usr/lib/go
   PATH=$PATH:$HOME/go/bin
 fi
 
