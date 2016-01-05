@@ -17,7 +17,7 @@ order += "disk /"
 order += "disk /home"
 order += "disk /home/strubbl/movies"
 order += "disk /home/strubbl/movies/serien"
-order += "disk /home/strubbl/tmp"
+order += "disk /mnt/tmp"
 order += "run_watch DHCP"
 #order += "run_watch VPN"
 #order += "wireless wlan0"
@@ -106,7 +106,7 @@ disk "/home/strubbl/movies/serien" {
         low_threshold = 10
 }
 
-disk "/home/strubbl/tmp" {
+disk "/mnt/tmp" {
         format = "tmp %free"
         low_threshold = 10
 }

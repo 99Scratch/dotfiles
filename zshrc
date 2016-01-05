@@ -54,7 +54,7 @@ ENABLE_CORRECTION="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
-HISTFILE="${HOME}/.history/$(date -u +%Y%m%d.%H.%M.%S)_${HOST}_$$"
+HISTFILE="${HOME}/.history/$(date -u +%Y)_${HOST}"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -89,7 +89,8 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 if [ -d ~/go ]; then
-  export GOPATH=~/go
+  GOPATH=~/go
+  GOROOT=/usr/lib/go
   PATH=$PATH:$HOME/go/bin
 fi
 
