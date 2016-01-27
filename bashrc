@@ -298,9 +298,9 @@ if [ -d ~/.bash_completion.d ]; then
   done
 fi
 
-export http_proxy=http://10.0.2.2:3128
-export https_proxy=https://10.0.2.2:3128
-export ftp_proxy=ftp://10.0.2.2:3128
+export http_proxy=http://127.0.0.1:3128
+export https_proxy=https://127.0.0.1:3128
+export ftp_proxy=ftp://127.0.0.1:3128
 export HTTP_PROXY=$http_proxy
 export HTTPS_PROXY=$https_proxy
 export FTP_PROXY=$ftp_proxy
