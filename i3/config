@@ -192,8 +192,8 @@ assign [class="Pidgin"] 4
 assign [class="psi"] 4
 
 exec nautilus -n
-exec pa-applet
 exec numlockx
+exec volumeicon
 exec nm-applet
 
 # vim:filetype=i3
