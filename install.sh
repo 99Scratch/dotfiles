@@ -110,7 +110,7 @@ then
   cp $VERBOSE_FLAG gitignore $HOME/.config/git/ignore
 fi
 
-cp user-dirs.dirs ~/.config/user-dirs.dirs
+cp -f user-dirs.dirs ~/.config/user-dirs.dirs
 chmod 400 ~/.config/user-dirs.dirs
 
 # zsh
@@ -118,7 +118,7 @@ if [ -d $HOME/.oh-my-zsh ]
 then
   rm -rf $HOME/.oh-my-zsh
 fi
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp zshrc ~/.zshrc
 cp bullet-train-oh-my-zsh-theme/bullet-train.zsh-theme ~/.oh-my-zsh/themes/
 
