@@ -264,9 +264,9 @@ if [ -d ~/bin/ ]; then
 fi
 
 if [ -d ~/go ]; then
-  GOPATH=~/go
-  GOROOT=/usr/lib/go
-  PATH=$PATH:$HOME/go/bin
+  export GOPATH=~/go
+  export GOROOT=/usr/lib/go
+  export PATH=$PATH:$GOPATH/bin
 fi
 
 if [ -d ~/opt/adt-bundle ]; then
