@@ -114,6 +114,9 @@ then
   cp $VERBOSE_FLAG gitignore $HOME/.config/git/ignore
 fi
 
+cp -f user-dirs.dirs ~/.config/user-dirs.dirs
+chmod 400 ~/.config/user-dirs.dirs
+
 # zsh
 if [ -d $HOME/.oh-my-zsh ]
 then

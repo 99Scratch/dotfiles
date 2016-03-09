@@ -89,9 +89,9 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 if [ -d ~/go ]; then
-  GOPATH=~/go
-  GOROOT=/usr/lib/go
-  PATH=$PATH:$HOME/go/bin
+  export GOPATH=~/go
+  export GOROOT=/usr/lib/go
+  export PATH=$PATH:$GOPATH/bin
 fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
