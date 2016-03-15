@@ -23,25 +23,25 @@ order += "volume master"
 order += "tztime local"
 
 ethernet eth0 {
-        format_up = "eth0   %ip [%speed]" 
+        format_up = "eth0  %ip [%speed]" 
         format_down = "eth0  "
 }
 
 ethernet eth1 {
-        format_up = "eth1   %ip [%speed]" 
+        format_up = "eth1  %ip [%speed]" 
         format_down = "eth1  "
 }
 
 tztime local {
-        format = "  %d.%m.%Y %H:%M:%S"
+        format = " %d.%m.%Y %H:%M:%S"
 }
 
 cpu_usage {
-        format = "  %usage"
+        format = " %usage"
 }
 
 load {
-        format = "  %1min %5min %15min"
+        format = " %1min %5min %15min"
 }
 
 volume master {
@@ -52,35 +52,10 @@ volume master {
 }
 
 disk "/" {
-<<<<<<< HEAD
-        format = "/ %free"
+        format = " %free"
 }
 
 disk "/home" {
-        format = "~ %free"
-=======
-        format = "  %free"
-        low_threshold = 10
-}
-
-disk "/home" {
-        format = "  %free"
-        low_threshold = 10
-}
-
-disk "/home/strubbl/movies" {
-        format = "  %free"
-        low_threshold = 10
-}
-
-disk "/home/strubbl/movies/serien" {
-        format = "  %free"
-        low_threshold = 10
-}
-
-disk "/mnt/tmp" {
-        format = "  %free"
-        low_threshold = 10
->>>>>>> ff5e9dbc867307dc294f34700f858c828c82f196
+        format = " %free"
 }
 
