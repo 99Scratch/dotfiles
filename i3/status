@@ -107,7 +107,7 @@ disk "/home/strubbl/movies/serien" {
 }
 
 disk "/mnt/tmp" {
-        format = " %free"
+        format = " %free"
         low_threshold = 10
 }
 
