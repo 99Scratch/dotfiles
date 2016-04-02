@@ -98,16 +98,16 @@ disk "/home" {
 
 disk "/home/strubbl/movies" {
         format = " %free"
-        low_threshold = 10
+        low_threshold = 5
 }
 
 disk "/home/strubbl/movies/serien" {
         format = " %free"
-        low_threshold = 10
+        low_threshold = 5
 }
 
 disk "/mnt/tmp" {
         format = " %free"
-        low_threshold = 10
+        low_threshold = 3
 }
 
