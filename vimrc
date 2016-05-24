@@ -122,6 +122,8 @@ autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automati
 "This is for setting Makefiles with tabs not spaces
 autocmd FileType make setlocal noexpandtab
 autocmd BufEnter *.make setlocal noexpandtab
+autocmd FileType in setlocal noexpandtab
+autocmd BufEnter *.in setlocal noexpandtab
 " run flake8 every time a Python file is saved
 autocmd BufWritePost *.py call Flake8()
 
