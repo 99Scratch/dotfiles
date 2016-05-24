@@ -45,6 +45,7 @@ alias fuck='sudo $(history -p \!\!)'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar &'
 # http://blog.jgc.org/2015/04/the-one-line-you-should-add-to-every.html
+alias idea='~/opt/idea/bin/idea.sh'
 alias make-print-var='make --eval="print-%: ; @echo $*=$($*)" print-'
 alias minecraft='java -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
 alias mobile_atlas_creator='java -Xmx800m -jar ~/opt/mobile_atlas_creator/Mobile_Atlas_Creator.jar'

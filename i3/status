@@ -22,6 +22,7 @@ order += "load"
 order += "volume master"
 order += "tztime local"
 
+<<<<<<< HEAD
 ethernet eth0 {
         format_up = "eth0  %ip [%speed]" 
         format_down = "eth0  "
