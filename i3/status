@@ -30,27 +30,27 @@ order += "volume master"
 order += "tztime local"
 
 cpu_temperature 0 {
-        format = "╽ %degrees °C"
+        format = " %degrees °C"
         max_threshold = 80
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
 }
 
 wireless wlp6s0 {
-        format_up = "↟ %ip [%essid %bitrate %quality]"
-        format_down = "↟ down"
+        format_up = "%ip [%essid %bitrate %quality]"
+        format_down = "down"
 }
 
 ethernet enp0s10 {
         # if you use %speed, i3status requires root privileges
-        format_up = "↔ %ip [%speed]" 
-        format_down = "↮"
+        format_up = " %ip [%speed]" 
+        format_down = " down"
 }
 
 battery 0 {
         format = "%status %percentage %remaining"
-        status_chr = "⚡"
-        status_bat = "⌛"
-        status_full = "☢"
+        status_chr = ""
+        status_bat = ""
+        status_full = ""
         format_down = "no battery"
 #        last_full_capacity = true
         threshold_type = time
@@ -58,7 +58,7 @@ battery 0 {
 }
 
 run_watch DHCP {
-        pidfile = "/var/run/dhclient-*.pid"
+        pidfile = "/var/run/dhcpcd-*.pid"
         format = "%title"
 }
 
@@ -68,15 +68,15 @@ run_watch VPN {
 }
 
 tztime local {
-        format = "⌚ %d.%m.%Y %H:%M:%S"
+        format = " %d.%m.%Y %H:%M:%S"
 }
 
 cpu_usage {
-        format = "㍶ %usage"
+        format = " %usage"
 }
 
 load {
-        format = "%1min %5min %15min"
+        format = " %1min %5min %15min"
 }
 
 volume master {
@@ -87,27 +87,27 @@ volume master {
 }
 
 disk "/" {
-        format = "/ %free"
+        format = " %free"
         low_threshold = 10
 }
 
 disk "/home" {
-        format = "~ %free"
+        format = " %free"
         low_threshold = 10
 }
 
 disk "/home/strubbl/movies" {
-        format = "m %free"
-        low_threshold = 10
+        format = " %free"
+        low_threshold = 5
 }
 
 disk "/home/strubbl/movies/serien" {
-        format = "s %free"
-        low_threshold = 10
+        format = " %free"
+        low_threshold = 5
 }
 
 disk "/mnt/tmp" {
-        format = "tmp %free"
-        low_threshold = 10
+        format = " %free"
+        low_threshold = 3
 }
 

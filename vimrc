@@ -19,7 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'gregsexton/gitv'
 Plugin 'elzr/vim-json'
 Plugin 'PotatoesMaster/i3-vim-syntax'
-Plugin 'git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git'
+Plugin 'https://fedorapeople.org/cgit/wwoods/public_git/vim-scripts.git'
 Plugin 'bogado/file-line'
 Plugin 'nvie/vim-flake8'
 Plugin 'fatih/vim-go'
@@ -122,6 +122,8 @@ autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automati
 "This is for setting Makefiles with tabs not spaces
 autocmd FileType make setlocal noexpandtab
 autocmd BufEnter *.make setlocal noexpandtab
+autocmd FileType in setlocal noexpandtab
+autocmd BufEnter *.in setlocal noexpandtab
 " run flake8 every time a Python file is saved
 autocmd BufWritePost *.py call Flake8()
 

@@ -13,20 +13,25 @@ cp $VERBOSE_FLAG bash_profile ~/.bash_profile
 cp $VERBOSE_FLAG -r bin ~
 cp $VERBOSE_FLAG gitconfig  ~/.gitconfig
 cp $VERBOSE_FLAG screenrc ~/.screenrc
-cp $VERBOSE_FLAG vimrc ~/.vimrc
 
 # VIM
-# clean up personal vim dir
-if [ -d ~/.vim ]
+whichvim=$(which vim)
+if [ -x "$whichvim" ]
 then
-  rm -rf ~/.vim
+  cp $VERBOSE_FLAG vimrc ~/.vimrc
+  # clean up personal vim dir
+  if [ -d ~/.vim ]
+  then
+    rm -rf ~/.vim
+  fi
+  # vim plugins
+  mkdir ~/.vim
+  cp $VERBOSE_FLAG -r vim/* ~/.vim/
+  # vundle initialisation
+  vim +PluginInstall +qall
+else
+  echo "no vim installed, skipping vim config"
 fi
-# vim plugins
-mkdir ~/.vim
-cp $VERBOSE_FLAG -r vim/* ~/.vim/
-# vundle initialisation
-vim +PluginInstall +qall
-
 
 # i3
 if [ -d ~/.i3 ]
@@ -110,12 +115,19 @@ then
   cp $VERBOSE_FLAG gitignore $HOME/.config/git/ignore
 fi
 
+cp -f user-dirs.dirs ~/.config/user-dirs.dirs
+chmod 400 ~/.config/user-dirs.dirs
+
 # zsh
 if [ -d $HOME/.oh-my-zsh ]
 then
   rm -rf $HOME/.oh-my-zsh
 fi
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp zshrc ~/.zshrc
 cp bullet-train-oh-my-zsh-theme/bullet-train.zsh-theme ~/.oh-my-zsh/themes/
+
+mkdir -p ~/.local/share/fonts
+curl -fLo "DejaVu Sans Mono for Powerline Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.ttf
+mv "DejaVu Sans Mono for Powerline Nerd Font Complete.ttf" ~/.local/share/fonts/
 
