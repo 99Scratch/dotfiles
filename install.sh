@@ -12,7 +12,6 @@ cp $VERBOSE_FLAG aliases ~/.aliases
 cp $VERBOSE_FLAG bash_profile ~/.bash_profile
 cp $VERBOSE_FLAG -r bin ~
 cp $VERBOSE_FLAG screenrc ~/.screenrc
-cp $VERBOSE_FLAG vimrc ~/.vimrc
 
 if [ ! -f ~/.gitconfig ]
 then
@@ -20,17 +19,23 @@ then
 fi
 
 # VIM
-# clean up personal vim dir
-if [ -d ~/.vim ]
+whichvim=$(which vim)
+if [ -x "$whichvim" ]
 then
-  rm -rf ~/.vim
+  cp $VERBOSE_FLAG vimrc ~/.vimrc
+  # clean up personal vim dir
+  if [ -d ~/.vim ]
+  then
+    rm -rf ~/.vim
+  fi
+  # vim plugins
+  mkdir ~/.vim
+  cp $VERBOSE_FLAG -r vim/* ~/.vim/
+  # vundle initialisation
+  vim +PluginInstall +qall
+else
+  echo "no vim installed, skipping vim config"
 fi
-# vim plugins
-mkdir ~/.vim
-cp $VERBOSE_FLAG -r vim/* ~/.vim/
-# vundle initialisation
-vim +PluginInstall +qall
-
 
 # i3
 if [ -d ~/.i3 ]

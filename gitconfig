@@ -20,7 +20,7 @@
   editor = vim
 
 [push]
-  default = matching
+  default = simple
 
 [http]
   proxy = 127.0.0.1:3128
