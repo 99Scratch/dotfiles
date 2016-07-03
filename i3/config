@@ -29,6 +29,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 # start workspace tabbed
 workspace_layout tabbed
 
+workspace 9 output HDMI1
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
