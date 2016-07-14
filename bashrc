@@ -125,6 +125,8 @@ function swap()  # Swap 2 filenames around, if they exist
     mv $TMPFILE "$2"
 }
 
+shopt -s extglob
+# https://wiki.archlinux.org/index.php/Bash/Functions#Extract
 extract() {
     local c e i
 
