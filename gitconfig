@@ -16,7 +16,7 @@
   check-whitespace = !git diff-tree --check $(git hash-object -t tree /dev/null) HEAD
 
 [core]
-  autocrlf = input
+#  autocrlf = input
   editor = vim
 
 [push]
@@ -25,5 +25,5 @@
 [http]
   proxy = 127.0.0.1:3128
 
-[url "http://"]
-	insteadOf = git://
+#[url "http://"]
+#	insteadOf = git://
