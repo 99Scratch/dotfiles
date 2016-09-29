@@ -283,6 +283,15 @@ die () {
     exit 1
 }
 
+# Safer curl | sh'ing
+function curlsh {
+  file=$(mktemp -t curlsh) || { echo "Failed creating file"; return; }
+  curl -s "$1" > $file || { echo "Failed to curl file"; return; }
+  $EDITOR $file || { echo "Editor quit with error code"; return; }
+  sh $file;
+  rm $file;
+}
+
 if [ -d ~/bin/ ]; then
   PATH=$PATH:$HOME/bin
 fi
