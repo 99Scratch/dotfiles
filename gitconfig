@@ -14,6 +14,7 @@
 	br = branch
 	ignored = ls-files --others -i --exclude-standard
   check-whitespace = !git diff-tree --check $(git hash-object -t tree /dev/null) HEAD
+  diff-remote = log @{u}...HEAD --graph --decorate --left-right --boundary --pretty=format:'%Cred%h%Creset %d %s %Cgreen(%cr)%Creset %Cblue[%an]%Creset' --abbrev-commit --date=relative
 
 [core]
 #  autocrlf = input
