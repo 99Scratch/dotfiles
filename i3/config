@@ -210,5 +210,7 @@ exec nautilus -n
 exec numlockx
 exec volumeicon
 exec nm-applet
+exec xset -dpms
+exec xset s off
 
 # vim:filetype=i3
