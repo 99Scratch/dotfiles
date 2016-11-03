@@ -298,7 +298,6 @@ fi
 
 if [ -d ~/go ]; then
   export GOPATH=~/go
-  export GOROOT=/usr/lib/go
   export PATH=$PATH:$GOPATH/bin
 fi
 
