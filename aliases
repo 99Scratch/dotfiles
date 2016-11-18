@@ -57,6 +57,7 @@ alias packagelist='dpkg --get-selections | /bin/grep -v deinstall$ | /bin/grep i
 alias pg='ps waux | grep -i'
 alias proxy='screen -S proxyspence ssh -N -L 3333:localhost:3128 spence'
 alias remove-untagged-docker-images='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
+alias rename-image-name-to-date="exiftool '-filename<${datetimeoriginal}' -d \"%Y-%m-%d %H.%M.%S%%-c.%%e\" ."
 alias scanoutports="seq 1 65535 | parallel -j 10 'echo -n \"{} \" && curl http://portquiz.net:{} --connect-timeout 1 -o /dev/null -q >/dev/null 2>&1 && echo open || echo closed' | tee ports.lst"
 alias songbird='nightingale'
 alias studio='~/opt/android-studio/bin/studio.sh'

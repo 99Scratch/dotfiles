@@ -29,6 +29,20 @@ bindsym $mod+Return exec i3-sensible-terminal
 # start workspace tabbed
 workspace_layout tabbed
 
+workspace 1 output DVI-I-1
+workspace 2 output DVI-I-1
+workspace 3 output DVI-I-1
+workspace 4 output DVI-I-1
+workspace 5 output DVI-I-1
+workspace 6 output DVI-I-1
+workspace 7 output DVI-I-1
+workspace 8 output DVI-I-1
+workspace 9 output HDMI-1
+workspace 10 output DVI-I-1
+
+bindsym $mod+x move workspace to output right
+bindsym $mod+y move workspace to output left
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -170,6 +184,7 @@ bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 bar {
         font pango:DejaVu Sans Mono for Powerline Nerd Font Complete 8
         status_command i3status --config ~/.i3/status
+        tray_output primary
 }
 
 for_window [title="0 A.D."] floating enable
@@ -195,7 +210,8 @@ assign [class="Audacious"] 4
 assign [class="Pidgin"] 4
 assign [class="psi"] 4
 
-exec nautilus -n
+exec ~/.screenlayout/standard.sh
+exec nautilus-desktop
 exec numlockx
 exec volumeicon
 exec nm-applet

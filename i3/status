@@ -14,11 +14,6 @@ general {
 
 #order += "ipv6"
 order += "disk /"
-#order += "disk /home"
-#order += "disk /home/strubbl/movies"
-#order += "disk /home/strubbl/movies/serien"
-#order += "disk /media/video"
-order += "run_watch DHCP"
 #order += "run_watch VPN"
 order += "wireless wlp6s0"
 order += "ethernet enp0s10"

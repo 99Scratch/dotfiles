@@ -12,6 +12,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if hash brew >/dev/random 2>&1 && [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
@@ -125,6 +129,8 @@ function swap()  # Swap 2 filenames around, if they exist
     mv $TMPFILE "$2"
 }
 
+shopt -s extglob
+# https://wiki.archlinux.org/index.php/Bash/Functions#Extract
 extract() {
     local c e i
 
@@ -275,6 +281,15 @@ function err { echo -e '\033[1;31mERROR: '"$1"'\033[0m'; }
 die () {
     err >&2 "$@"
     exit 1
+}
+
+# Safer curl | sh'ing
+function curlsh {
+  file=$(mktemp -t curlsh) || { echo "Failed creating file"; return; }
+  curl -s "$1" > $file || { echo "Failed to curl file"; return; }
+  $EDITOR $file || { echo "Editor quit with error code"; return; }
+  sh $file;
+  rm $file;
 }
 
 if [ -d ~/bin/ ]; then
