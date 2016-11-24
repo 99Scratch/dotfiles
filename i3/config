@@ -184,7 +184,6 @@ bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 bar {
         font pango:DejaVu Sans Mono for Powerline Nerd Font Complete 8
         status_command i3status --config ~/.i3/status
-        tray_output primary
 }
 
 for_window [title="0 A.D."] floating enable
