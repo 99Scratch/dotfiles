@@ -208,7 +208,7 @@ assign [class="Pidgin"] 4
 assign [class="psi"] 4
 
 exec ~/.screenlayout/standard.sh
-exec nautilus-desktop
+exec nautilus -n
 exec numlockx
 exec volumeicon
 exec nm-applet
