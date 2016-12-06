@@ -39,7 +39,7 @@ alias android2path='export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/op
 alias banIp='iptables -A INPUT -j DROP -s'
 alias busy='my_file=$(find /usr/include -type f | sort -R | head -n 1); my_len=$(wc -l $my_file | awk "{print $1}"); let "r = $RANDOM % $my_len" 2>/dev/null; vim +$r $my_file'
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
-alias eclipse='~/opt/eclipse/eclipse/eclipse'
+alias eclipse='~/opt/eclipse/eclipse &'
 alias fakt='git add -A; git commit -m "f akt"; git push'
 alias fuck='sudo $(history -p \!\!)'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
