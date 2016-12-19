@@ -24,6 +24,7 @@ Plugin 'bogado/file-line'
 Plugin 'nvie/vim-flake8'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-airline/vim-airline'
 " my plugins end
 
 " All of your Plugins must be added before the following line
@@ -116,6 +117,9 @@ set visualbell
 
 " line numbering on
 set number
+
+" vim-airline
+set laststatus=2
 
 autocmd BufEnter *.{c,cpp,h} setl cindent
 autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automatisch um
