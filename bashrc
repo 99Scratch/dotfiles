@@ -296,6 +296,10 @@ if [ -d ~/bin/ ]; then
   PATH=$PATH:$HOME/bin
 fi
 
+if [ -d /usr/local/texlive/2016/bin/x86_64-linux/ ]; then
+  PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-linux/
+fi
+
 if [ -d ~/go ]; then
   export GOPATH=~/go
   export PATH=$PATH:$GOPATH/bin
