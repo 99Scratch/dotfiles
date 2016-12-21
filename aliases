@@ -70,5 +70,6 @@ alias timmy='java -jar /opt/timmy/Timmy.jar'
 alias vm='sudo virt-manager'
 alias xg='cd ~/opt/xg/; screen -S xdcc-grabscher mono XG.Application.exe'
 alias vi='vim'
+command -v nvim > /dev/null 2>&1 && alias vi=nvim
 #alias whatthecommit='git commit -m "$(curl whatthecommit.com | grep \'^<p>\' | cut -d\'>\' -f2-)"'
 

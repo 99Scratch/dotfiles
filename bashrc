@@ -298,7 +298,6 @@ fi
 
 if [ -d ~/go ]; then
   export GOPATH=~/go
-  export GOROOT=/usr/lib/go
   export PATH=$PATH:$GOPATH/bin
 fi
 
@@ -320,6 +319,8 @@ fi
 if [ -f ~/.bash_aliases_more ]; then
     . ~/.bash_aliases_more
 fi
+
+command -v pandoc > /dev/null 2>&1 &&  eval "$(pandoc --bash-completion)"
 
 if [ -f ~/bin/sbm.sh ]; then
     . ~/bin/sbm.sh
