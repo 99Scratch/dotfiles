@@ -39,12 +39,14 @@ alias android2path='export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/op
 alias banIp='iptables -A INPUT -j DROP -s'
 alias busy='my_file=$(find /usr/include -type f | sort -R | head -n 1); my_len=$(wc -l $my_file | awk "{print $1}"); let "r = $RANDOM % $my_len" 2>/dev/null; vim +$r $my_file'
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
+alias dusch="du -sch * | sort -k1 -h "
 alias fakt='git add -A; git commit -m "f akt"; git push'
 alias fuck='sudo $(history -p \!\!)'
+alias hmux='tmux attach-session -t hb || tmux new-session -s hb'
+alias idea='~/opt/idea/bin/idea.sh'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar &'
 # http://blog.jgc.org/2015/04/the-one-line-you-should-add-to-every.html
-alias idea='~/opt/idea/bin/idea.sh'
 alias make-print-var='make --eval="print-%: ; @echo $*=$($*)" print-'
 alias minecraft='java -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
 alias mobile_atlas_creator='java -Xmx800m -jar ~/opt/mobile_atlas_creator/Mobile_Atlas_Creator.jar'
