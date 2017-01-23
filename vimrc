@@ -24,7 +24,7 @@ Plugin 'bogado/file-line'
 Plugin 'nvie/vim-flake8'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline'
 " my plugins end
 
 " All of your Plugins must be added before the following line
@@ -129,7 +129,7 @@ autocmd BufEnter *.make setlocal noexpandtab
 autocmd FileType in setlocal noexpandtab
 autocmd BufEnter *.in setlocal noexpandtab
 " run flake8 every time a Python file is saved
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
 
 " lets you use w!! to do that after you opened the file already, which you
 " wanted to edit with root privileges
