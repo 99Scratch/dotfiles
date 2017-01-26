@@ -24,6 +24,7 @@ Plugin 'bogado/file-line'
 Plugin 'nvie/vim-flake8'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
+"Plugin 'vim-airline/vim-airline'
 " my plugins end
 
 " All of your Plugins must be added before the following line
@@ -117,6 +118,9 @@ set visualbell
 " line numbering on
 set number
 
+" vim-airline
+set laststatus=2
+
 autocmd BufEnter *.{c,cpp,h} setl cindent
 autocmd Filetype text setl textwidth=80 " Editor bricht nach 80 Zeichen automatisch um
 "This is for setting Makefiles with tabs not spaces
@@ -125,7 +129,7 @@ autocmd BufEnter *.make setlocal noexpandtab
 autocmd FileType in setlocal noexpandtab
 autocmd BufEnter *.in setlocal noexpandtab
 " run flake8 every time a Python file is saved
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
 
 " lets you use w!! to do that after you opened the file already, which you
 " wanted to edit with root privileges
