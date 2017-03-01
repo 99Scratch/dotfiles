@@ -42,6 +42,7 @@ alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cu
 alias dusch="du -sch * | sort -k1 -h "
 alias fakt='git add -A; git commit -m "f akt"; git push'
 alias fuck='sudo $(history -p \!\!)'
+alias gregsync='while true; do greg sync; sleep 3600; done'
 alias hmux='tmux attach-session -t hmux || tmux new-session -s hmux'
 alias idea='~/opt/idea/bin/idea.sh'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
