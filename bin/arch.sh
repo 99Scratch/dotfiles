@@ -23,7 +23,7 @@ else
   sudo pacman -S sudo git vim bash-completion cowsay fortune-mod openssh sshuttle screen tmux curl wget go go-tools nmap bind-tools htop nethogs smartmontools usbutils vnstat zsh zsh-completions whois
 
   # GUI
-  sudo pacman -S i3-wm i3lock i3status mpv firefox pidgin pidgin-otr gimp libreoffice chromium file-roller gedit gnome-terminal gparted gwenview kile liteide meld midori okular opera screenfetch xnviewmp volumeicon mpv
+  sudo pacman -S i3 mpv firefox pidgin pidgin-otr gimp libreoffice chromium file-roller gedit gnome-terminal gparted gwenview kile liteide meld midori okular opera screenfetch xnviewmp volumeicon mpv
 
   # Network Manager
   sudo pacman -S networkmanager network-manager-applet
