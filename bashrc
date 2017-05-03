@@ -27,6 +27,7 @@ shopt -s histappend
 HISTSIZE=-1
 HISTFILESIZE=5000000
 HISTTIMEFORMAT="[%Y-%m-%d - %H:%M:%S] "
+HISTIGNORE="ls:ll:la:w:who:exit:cd:cd ..:pwd"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
