@@ -24,9 +24,10 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=20000
-HISTFILESIZE=20000
+HISTSIZE=-1
+HISTFILESIZE=5000000
 HISTTIMEFORMAT="[%Y-%m-%d - %H:%M:%S] "
+HISTIGNORE="ls:ll:la:w:who:exit:cd:cd ..:pwd"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
