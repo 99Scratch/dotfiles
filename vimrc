@@ -25,6 +25,7 @@ Plugin 'PotatoesMaster/i3-vim-syntax'
 Plugin 'fatih/vim-go'
 Plugin 'jiangmiao/auto-pairs'
 "Plugin 'vim-airline/vim-airline'
+Plugin 'chr4/sslsecure.vim'
 " my plugins end
 
 " All of your Plugins must be added before the following line
