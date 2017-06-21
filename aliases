@@ -47,6 +47,7 @@ alias gregsync='while true; do date; time greg sync; date; sleep 3600; done'
 alias idea='~/opt/idea/bin/idea.sh'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar &'
+alias litw='java -jar ~/opt/litwr/litwrl.jar'
 # http://blog.jgc.org/2015/04/the-one-line-you-should-add-to-every.html
 alias make-print-var='make --eval="print-%: ; @echo $*=$($*)" print-'
 alias minecraft='java -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
