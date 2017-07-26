@@ -44,10 +44,12 @@ alias dusch="du -sch * | sort -k1 -h "
 alias eclipse='~/opt/eclipse/eclipse &'
 alias fakt='git add -A; git commit -m "f akt"; git push'
 alias fuck='sudo $(history -p \!\!)'
+alias git-repo-compress='git reflog expire --all --expire=now && git gc --prune=now --aggressive'
 alias gregsync='while true; do date; time greg sync; date; sleep 3600; done'
 alias idea='~/opt/idea/bin/idea.sh'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar &'
+alias litw='java -jar ~/opt/litwr/litwrl.jar'
 # http://blog.jgc.org/2015/04/the-one-line-you-should-add-to-every.html
 alias make-print-var='make --eval="print-%: ; @echo $*=$($*)" print-'
 alias minecraft='java -Xmx800m -jar ~/opt/minecraft/minecraft.jar'
