@@ -40,7 +40,7 @@ alias banIp='iptables -A INPUT -j DROP -s'
 alias busy='my_file=$(find /usr/include -type f | sort -R | head -n 1); my_len=$(wc -l $my_file | awk "{print $1}"); let "r = $RANDOM % $my_len" 2>/dev/null; vim +$r $my_file'
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
 alias dusch="du -sch * | sort -k1 -h "
-alias fakt='git add -A mymoney; git commit -m "f akt"; git push'
+alias fakt='git add -A mm; git commit -m "f akt"; git push'
 alias fuck='sudo $(history -p \!\!)'
 alias git-repo-compress='git reflog expire --all --expire=now && git gc --prune=now --aggressive'
 alias gregsync='while true; do date; time greg sync; date; sleep 3600; done'
