@@ -22,6 +22,22 @@ alias lt='ls -ltr'         # sort by date, most recent last
 alias lm='ls -al |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 
+# git
+alias gitb='git branch'
+alias gitbb='git branch -a'
+alias gito='git format-patch'
+alias gits='git status'
+alias gitl='git log --pretty=oneline --abbrev-commit'
+alias gitln='git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short'
+alias gith='git reset --hard'
+alias giti='git rebase -i'
+alias gitr='git rebase'
+alias gita='git apply --reject'
+alias gitc='git checkout'
+alias gitd='git difftool'
+alias gitf='git fetch'
+alias gitt='git describe --exact-match --tags'
+
 # aliases manipulating normal system commands
 alias free='free -m'
 alias mkdir='mkdir -p'
