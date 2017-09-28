@@ -22,6 +22,22 @@ alias lt='ls -ltr'         # sort by date, most recent last
 alias lm='ls -al |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 
+# git
+alias gitb='git branch'
+alias gitbb='git branch -a'
+alias gito='git format-patch'
+alias gits='git status'
+alias gitl='git log --pretty=oneline --abbrev-commit'
+alias gitln='git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --date=short'
+alias gith='git reset --hard'
+alias giti='git rebase -i'
+alias gitr='git rebase'
+alias gita='git apply --reject'
+alias gitc='git checkout'
+alias gitd='git difftool'
+alias gitf='git fetch'
+alias gitt='git describe --exact-match --tags'
+
 # aliases manipulating normal system commands
 alias free='free -m'
 alias mkdir='mkdir -p'
@@ -33,6 +49,7 @@ alias watch='watch -n 1'
 # lazyness aliases
 alias abmelden='gnome-session-save --logout --gui'
 alias adb-restart='sudo adb devices; sudo adb kill-server; sudo adb start-server; sudo adb devices'
+alias afterhumans='java -jar ~/opt/afterhumans/TechnicLauncher.jar'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias android2path='export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools'
 alias b='byobu attach-session -t smux || byobu new-session -s smux'
@@ -41,10 +58,10 @@ alias busy='my_file=$(find /usr/include -type f | sort -R | head -n 1); my_len=$
 alias calcTTRSSpurged='grep -i purged /var/log/tt-rss.log |grep -v "ged 0 o" |cut -f 3 -d" " |xargs | sed -e "s/ /+/g" | bc'
 alias dusch="du -sch * | sort -k1 -h "
 alias eclipse='~/opt/eclipse/eclipse &'
-alias fakt='git add -A; git commit -m "f akt"; git push'
+alias fakt='git add -A mm; git commit -m "f akt"; git push'
 alias fuck='sudo $(history -p \!\!)'
 alias git-repo-compress='git reflog expire --all --expire=now && git gc --prune=now --aggressive'
-alias gregsync='while true; do date; time greg sync; date; sleep 3600; done'
+alias gregsync='while true; do date; time greg sync; date; sleep 10800; done'
 alias idea='~/opt/idea/bin/idea.sh'
 alias jabref='java -jar ~/opt/JabRef-2.7b2.jar'
 alias jdownloader='java -jar ~/opt/jdownloader/JDownloader.jar &'
