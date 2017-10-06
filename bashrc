@@ -25,7 +25,7 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=-1
-HISTFILESIZE=5000000
+HISTFILESIZE=25000000
 HISTTIMEFORMAT="[%Y-%m-%d - %H:%M:%S] "
 HISTIGNORE="ls:ll:la:w:who:exit:cd:cd ..:pwd"
 
