@@ -90,33 +90,10 @@ xterm*|rxvt*)
     ;;
 esac
 
-
-function xtitle()      # Adds some text in the terminal frame.
-{
-    case "$TERM" in
-        *term | rxvt)
-            echo -n -e "\033]0;$*\007" ;;
-        *)  
-            ;;
-    esac
-}
-
-# aliases that use xtitle
-alias top='xtitle Processes on `hostname` && top'
-alias htop='xtitle Processes on `hostname` && htop'
-alias make='xtitle Making $(basename $PWD) ; make'
-alias ncftp="xtitle ncFTP ; ncftp"
-
-# .. and functions
-#function man()
-#{
-#    for i ; do
-#        xtitle The $(basename $1|tr -d .[:digit:]) manual
-#        command man -a "$i"
-#    done
-#}
+export EDITOR="vim"
 
 
+# bash functions
 function swap()  # Swap 2 filenames around, if they exist
 {                #(from Uzi's bashrc).
     local TMPFILE=tmp.$$ 
@@ -168,11 +145,6 @@ extract() {
     return $e
 }
 
-
-#-------------------------------------------------------------
-# Misc utilities:
-#-------------------------------------------------------------
-
 function repeat()       # Repeat n times command.
 {
     local i max
@@ -182,59 +154,6 @@ function repeat()       # Repeat n times command.
     done
 }
 
-
-
-
-
-#-------------------------------------------------------------
-# Greeting, motd etc...
-#-------------------------------------------------------------
-
-# Less Colors for Man Pages
-export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
-export LESS_TERMCAP_md=$'\e[01;38;5;74m'  # begin bold
-export LESS_TERMCAP_me=$'\e[0m'           # end mode
-export LESS_TERMCAP_se=$'\e[0m'           # end standout-mode
-export LESS_TERMCAP_so=$'\e[38;5;246m'    # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\e[0m'           # end underline
-export LESS_TERMCAP_us=$'\e[04;38;5;146m' # begin underline
-
-# Define some colors first:
-red='\e[0;31m'
-RED='\e[1;31m'
-blue='\e[0;34m'
-BLUE='\e[1;34m'
-cyan='\e[0;36m'
-CYAN='\e[1;36m'
-NC='\e[0m'              # No Color
-
-
-# Looks best on a terminal with black background.....
-echo -e "${CYAN}This is BASH ${RED}${BASH_VERSION%.*}\
-${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
-date
-fortunemod=`which fortune 2>/dev/null`
-cowthinkbin=`which cowthink 2>/dev/null`
-if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
-    $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
-fi
-# list screen sessions
-if which screen >/dev/null 2>&1; then
-    screen -q -ls
-    if [ $? -ge 10 ]; then
-        screen -ls
-    fi
-fi
-
-
-function _exit()        # Function to run upon exit of shell.
-{
-    echo -e "${RED}Hasta la vista, baby.${NC}"
-}
-trap _exit EXIT
-
-
-#apt history
 function apt-history(){
       case "$1" in
         install)
@@ -293,26 +212,72 @@ function curlsh {
   rm $file;
 }
 
+
+#-------------------------------------------------------------
+# Greeting, motd, exit etc...
+#-------------------------------------------------------------
+
+# Less Colors for Man Pages
+export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
+export LESS_TERMCAP_md=$'\e[01;38;5;74m'  # begin bold
+export LESS_TERMCAP_me=$'\e[0m'           # end mode
+export LESS_TERMCAP_se=$'\e[0m'           # end standout-mode
+export LESS_TERMCAP_so=$'\e[38;5;246m'    # begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\e[0m'           # end underline
+export LESS_TERMCAP_us=$'\e[04;38;5;146m' # begin underline
+
+# Define some colors first:
+red='\e[0;31m'
+RED='\e[1;31m'
+blue='\e[0;34m'
+BLUE='\e[1;34m'
+cyan='\e[0;36m'
+CYAN='\e[1;36m'
+NC='\e[0m'              # No Color
+
+
+# Looks best on a terminal with black background.....
+echo -e "${CYAN}This is BASH ${RED}${BASH_VERSION%.*}\
+${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
+date
+fortunemod=`which fortune 2>/dev/null`
+cowthinkbin=`which cowthink 2>/dev/null`
+if [[ (-x $fortunemod) && (-x $cowthinkbin) ]]; then
+    $fortunemod -s | $cowthinkbin    # Makes our day a bit more fun.... :-)
+fi
+# list screen sessions
+if which screen >/dev/null 2>&1; then
+    screen -q -ls
+    if [ $? -ge 10 ]; then
+        screen -ls
+    fi
+fi
+
+
+function _exit()        # Function to run upon exit of shell.
+{
+    echo -e "${RED}Hasta la vista, baby.${NC}"
+}
+trap _exit EXIT
+
+
+# local executables
 if [ -d ~/bin/ ]; then
   PATH=$PATH:$HOME/bin
 fi
 
+# Golang
 if [ -d ~/go ]; then
   export GOPATH=~/go
   export PATH=$PATH:$GOPATH/bin
 fi
 
+# Android
 if [ -d ~/opt/adt-bundle ]; then
   export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools
 fi
 
-export EDITOR="vim"
-
 # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
@@ -321,15 +286,19 @@ if [ -f ~/.bash_aliases_more ]; then
     . ~/.bash_aliases_more
 fi
 
-command -v pandoc > /dev/null 2>&1 &&  eval "$(pandoc --bash-completion)"
 
+# SSH bookmark creator
 if [ -f ~/bin/sbm.sh ]; then
     . ~/bin/sbm.sh
 fi
+
+# Bash completion
 
 if [ -d ~/.bash_completion.d ]; then
   for baco in ~/.bash_completion.d/*.bash ; do
     . $baco
   done
 fi
+
+command -v pandoc > /dev/null 2>&1 &&  eval "$(pandoc --bash-completion)"
 
