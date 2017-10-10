@@ -1,6 +1,6 @@
 #!/bin/sh
 # for the dotfiles
-sudo aptitude install xtitle cowsay fortune-mod
+sudo aptitude install cowsay fortune-mod
 
 # for the bins
 sudo aptitude install xmlstarlet
