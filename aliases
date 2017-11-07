@@ -35,7 +35,7 @@ alias gitr='git rebase'
 alias gita='git apply --reject'
 alias gitc='git checkout'
 alias gitd='git difftool'
-alias gitf='git fetch'
+alias gitf='git fetch --tags --prune'
 alias gitt='git describe --exact-match --tags'
 
 # aliases manipulating normal system commands
