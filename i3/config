@@ -209,6 +209,7 @@ assign [title="gPodder"] 3
 assign [class="Audacious"] 4
 assign [class="Pidgin"] 4
 assign [class="psi"] 4
+assign [class="Signal"] 5
 
 exec ~/.screenlayout/standard.sh
 exec nautilus-desktop
