@@ -210,11 +210,11 @@ assign [class="Audacious"] 4
 assign [class="Pidgin"] 4
 assign [class="psi"] 4
 
-exec g213-led -a 449aff
 exec ~/.screenlayout/standard.sh
 exec nautilus-desktop
-exec numlockx
 exec volumeicon
 exec nm-applet
+exec numlockx
+exec g213-led -a 449aff
 
 # vim:filetype=i3
