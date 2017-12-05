@@ -274,7 +274,7 @@ fi
 
 # Android
 if [ -d ~/opt/adt-bundle ]; then
-  export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools
+  export PATH=${PATH}:~/opt/adt-bundle/sdk/platform-tools:~/opt/adt-bundle/sdk/tools:~/opt/adt-bundle/sdk/tools/bin
 fi
 
 # Alias definitions.
