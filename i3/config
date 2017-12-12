@@ -206,9 +206,7 @@ assign [class="Firefox"] 1
 assign [class="Thunderbird"] 2
 assign [class="JDownloader"] 3
 assign [title="gPodder"] 3
-assign [class="Pidgin"] 4
-assign [class="psi"] 4
-assign [class="Signal"] 5
+assign [class="Signal"] 4
 
 exec ~/.screenlayout/standard.sh
 exec nautilus-desktop
